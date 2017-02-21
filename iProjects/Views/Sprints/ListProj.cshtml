@@ -1,0 +1,63 @@
+﻿@using iProjects.Models
+@using Microsoft.AspNet.Identity
+@model IEnumerable<iProjects.Models.Sprint>
+@{ Layout = null; }
+@if (Request.IsAuthenticated && User.IsInRole("Create"))
+{
+    <p type="button" class="btn btn-primary btn-block fa fa-plus">
+        @Html.ActionLink("Create New Task", "Create")
+    </p>
+}
+@{
+    ApplicationDbContext db = new ApplicationDbContext();
+    ApplicationUser user = db.Users.Find(User.Identity.GetUserId());
+    Project proj = new Project();
+    //Compare id of URL with id of item.
+    var projectId = Url.RequestContext.RouteData.Values["id"].ToString();
+
+    foreach (var item in Model)
+    {
+        if (item.Finished == false && item.IsActive == true && item.ProjectId.ToString() == projectId)
+        {
+            if (item.UserId != user.Id)
+            {
+                <div class="hidden">
+                </div>
+            }
+            else
+            {
+                <div class="content tasks">
+                    <div class="task-item priority-low">
+                        <div class="task-item-content">
+                            <div class="task-item-head">Fix Version: @Html.DisplayFor(modelItem => item.Duration)</div>
+                            <div class="task-item-subhead">
+                                <h6>@Html.DisplayFor(modelItem => item.Name)</h6>
+                                <br />
+                                @Html.Raw(item.EndTime)
+                            </div>
+                            <div class="task-item-date">
+                                <i class="fa icon-user-3"></i> @Html.DisplayFor(modelItem => item.User.Name) &nbsp; @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                                {
+                                    <div class="btn fa fa-edit">
+                                        @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                                    </div>
+                                }
+
+                                @if (Request.IsAuthenticated && User.IsInRole("ProjectUser"))
+                                {
+                                    <div class="btn fa fa-edit">
+                                        @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                                    </div>
+                                }
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    }
+
+
+
+}

@@ -1,0 +1,176 @@
+﻿@model IEnumerable<iProjects.Models.BugReport>
+
+@{ Layout = null; }
+@if (Request.IsAuthenticated && User.IsInRole("Create"))
+{
+    <p type="button" class="btn btn-primary btn-block fa fa-plus">
+        @Html.ActionLink("Create New Task", "Create")
+    </p>
+}
+@foreach (var item in Model)
+{
+    if (item.Status == false && item.Backlog != false)
+    {
+        if (item.BugType.TypeOfBug == "Minor")
+        {
+            <div class="content tasks">
+                <div class="task-item priority-low">
+                    <div class="task-item-content">
+                        <div class="task-item-head">@Html.DisplayFor(modelItem => item.ProductName)</div>
+                        <div class="task-item-subhead">
+                            <h6>@Html.DisplayFor(modelItem => item.Title)</h6>
+                            <br />
+                            @Html.DisplayFor(modelItem => item.Description)
+                            <br />
+                            @Html.DisplayFor(modelItem => item.BugDetails)
+                        </div>
+                        <div class="task-item-date">
+                            <i class="fa fa-calendar"></i> @Html.DisplayFor(modelItem => item.Creator) <i class="fa fa-calendar"></i> @Html.DisplayFor(modelItem => item.Sprint.Name)  &nbsp; @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                            {
+                                <div class="btn fa fa-edit">
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                                </div>
+                            }
+
+                            @if (Request.IsAuthenticated && User.IsInRole("ProjectUser"))
+                            {
+                                <div class="btn fa fa-edit">
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+        if (item.BugType.TypeOfBug == "Major")
+        {
+            <div class="content tasks">
+                <div class="task-item priority-high">
+                    <div class="task-item-content">
+                        <div class="task-item-head">@Html.DisplayFor(modelItem => item.ProductName)</div>
+                        <div class="task-item-subhead">
+                            <h6>@Html.DisplayFor(modelItem => item.Title)</h6>
+                            <br />
+                            @Html.DisplayFor(modelItem => item.Description)
+                            <br />
+                            @Html.DisplayFor(modelItem => item.BugDetails)
+                        </div>
+                        <div class="task-item-date">
+                            <i class="fa fa-calendar"></i> @Html.DisplayFor(modelItem => item.Creator) &nbsp; @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                            {
+                                <div class="btn fa fa-edit">
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                                </div>
+                            }
+
+                            @if (Request.IsAuthenticated && User.IsInRole("ProjectUser"))
+                            {
+                                <div class="btn fa fa-edit">
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        if (item.BugType.TypeOfBug == "Critical")
+        {
+            <div class="content tasks">
+                <div class="task-item priority-mid">
+                    <div class="task-item-content">
+                        <div class="task-item-head">@Html.DisplayFor(modelItem => item.ProductName)</div>
+                        <div class="task-item-subhead">
+                            <h6>@Html.DisplayFor(modelItem => item.Title)</h6>
+                            <br />
+                            @Html.DisplayFor(modelItem => item.Description)
+                            <br />
+                            @Html.DisplayFor(modelItem => item.BugDetails)
+                        </div>
+                        <div class="task-item-date">
+                            <i class="fa fa-calendar"></i> @Html.DisplayFor(modelItem => item.Creator) &nbsp; @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                            {
+                                <div class="btn fa fa-edit">
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                                </div>
+                            }
+
+                            @if (Request.IsAuthenticated && User.IsInRole("ProjectUser"))
+                            {
+                                <div class="btn fa fa-edit">
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        if (item.BugType.TypeOfBug == "Not Set")
+        {
+            <div class="task-item">
+                <div class="task-item-content">
+                    <div class="task-item-content">
+                        <div class="task-item-head">@Html.DisplayFor(modelItem => item.ProductName)</div>
+                        <div class="task-item-subhead">
+                            <h6>@Html.DisplayFor(modelItem => item.Title)</h6>
+                            <br />
+                            @Html.DisplayFor(modelItem => item.Description)
+                            <br />
+                            @Html.DisplayFor(modelItem => item.BugDetails)
+                        </div>
+                        <div class="task-item-date">
+                            <i class="fa fa-calendar"></i> @Html.DisplayFor(modelItem => item.Creator) &nbsp; @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                            {
+                                <div class="btn fa fa-edit">
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                                </div>
+                            }
+
+                            @if (Request.IsAuthenticated && User.IsInRole("ProjectUser"))
+                            {
+                                <div class="btn fa fa-edit">
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+        if (item.BugType.TypeOfBug == "")
+        {
+            <div class="task-item">
+                <div class="task-item-content">
+                    <div class="task-item-content">
+                        <div class="task-item-head">@Html.DisplayFor(modelItem => item.ProductName)</div>
+                        <div class="task-item-subhead">
+                            <h6>@Html.DisplayFor(modelItem => item.Title)</h6>
+                            <br />
+                            @Html.DisplayFor(modelItem => item.Description)
+                            <br />
+                            @Html.DisplayFor(modelItem => item.BugDetails)
+                        </div>
+                        <div class="task-item-date">
+                            <i class="fa fa-calendar"></i> @Html.DisplayFor(modelItem => item.Creator) &nbsp; @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                            {
+                                <div class="btn fa fa-edit">
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                                </div>
+                            }
+
+                            @if (Request.IsAuthenticated && User.IsInRole("ProjectUser"))
+                            {
+                                <div class="btn fa fa-edit">
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.Id })
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+}

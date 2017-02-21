@@ -1,0 +1,320 @@
+﻿@model iProjects.Models.Sprint
+
+@{
+    ViewBag.Title = "Details";
+}
+<style type="text/css">
+    .tooltip-primary {
+    }
+
+    .tooltip-default {
+    }
+</style>
+
+<section class="wrapper site-min-height">
+    <!-- page start-->
+    <section class="panel">
+        <header class="panel-heading ">
+            @Html.DisplayNameFor(model => model.Name)
+            <span class="pull-right">
+                @Html.DisplayFor(model => model.Name)
+            </span>
+        </header>
+
+    </section>
+    <div class="row">
+        <div class="col-md-8">
+            <section class="panel">
+                <header class="panel-heading">
+                    Last Activity
+                </header>
+                <div class="panel-body">
+                    <div class="col-md-5">
+                        @if (Request.IsAuthenticated)
+                        {
+                            @Html.Partial("Widgets/SprintDetailsList/_MainListStoriesSprint")
+                            @Html.Partial("Widgets/SprintDetailsList/_MainListTasksSprint")
+                        }
+                    </div>
+
+
+                    <div class="col-md-5">
+                        @if (Request.IsAuthenticated)
+                        {
+                            @Html.Partial("Widgets/SprintDetailsList/_MainListBusgSprint")
+                        }
+                    </div>
+                </div>
+            </section>
+            <div class="panel panel-invert" data-collapsed="0">
+                <!-- setting the attribute data-collapsed="1" will collapse the panel -->
+                <!-- panel head -->
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <i class="fa icon-target"></i> Project Overview
+                    </div>
+
+                    <div class="panel-options">
+
+                    </div>
+                </div>
+
+                <!-- panel body -->
+                <div class="panel-body">
+
+                    <div class="tile-progress tile-primary" style="margin-bottom: 0px;">
+
+                        @*<div class="tile-header" style="padding: 0px 0px 20px 0px;">
+                            <table width="100%" border="0">
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fa fa-dot-circle-o"></i> @Html.DisplayNameFor(model => model.TotalTimeSpent)</td>
+                                        <td>:</td>
+                                        <td>@Html.DisplayFor(model => model.TotalTimeSpent)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-dot-circle-o"></i> @Html.DisplayNameFor(model => model.StartDate)</td>
+                                        <td>:</td>
+                                        <td>@Html.DisplayFor(model => model.StartDate)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-dot-circle-o"></i> @Html.DisplayNameFor(model => model.EndDate)</td>
+                                        <td>:</td>
+                                        <td>@Html.DisplayFor(model => model.EndDate)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-dot-circle-o"></i> @Html.DisplayNameFor(model => model.Budget)</td>
+                                        <td>:</td>
+                                        <td>@Html.DisplayFor(model => model.Budget)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-dot-circle-o"></i> @Html.DisplayNameFor(model => model.ProjectCategory)</td>
+                                        <td>:</td>
+                                        <td>
+                                            @Html.DisplayFor(model => model.ProjectCategory.CategoryName)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-dot-circle-o"></i> @Html.DisplayNameFor(model => model.Url)</td>
+                                        <td>:</td>
+                                        <td>@Html.DisplayFor(model => model.Url)</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-dot-circle-o"></i> Project Status</td>
+                                        <td>:</td>
+                                        <td>
+                                            @{
+                                            if (Model.Finished == false)
+                                            {
+                                                <div class="label label-warning">
+                                                    <div class="hidden">
+                                                        @Html.DisplayFor(model => model.Finished)
+                                                    </div>
+                                                    Opened
+                                                </div>
+                                            }
+                                            else
+                                            {
+                                                <div class="label label-success">
+                                                    <div class="hidden">
+                                                        @Html.DisplayFor(model => model.Finished)
+                                                    </div>
+                                                    Finished
+                                                </div>
+                                            }
+                                        }
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>*@
+                    @*<div class="col-lg-12">
+                        <dl class="dl-horizontal mtop20 p-progress">
+                            <dt>Project Completed:</dt>
+                            <dd>
+                                <div class="progress progress-striped active ">
+                                    <div style="width: 80%;" class="progress-bar progress-bar-success"></div>
+                                </div>
+                                <small>Project completed in <strong>80%</strong>. Remaining close the project, sign a contract and invoice.</small>
+                            </dd>
+                        </dl>
+                    </div>*@
+                    <button class="btn btn-success fa fa-pencil" style="margin-top: 15px;">
+                        @Html.ActionLink("Edit", "Edit", new { id = Model.ProjectId })
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+   @* <div class="col-md-4">
+        <section class="panel">
+            <header class="panel-heading">
+                @Html.DisplayNameFor(model => model.Description)
+            </header>
+
+            <div class="panel-body">
+                <p>@Html.Raw(Model.Description)</p>
+                <br>
+                <br>
+                <h5 class="bold">Project files</h5>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <td width="5"><i class="fa fa-dot-circle-o"></i></td>
+                            <td>
+                                <i class="fa fa-file-pdf-o"></i> pdf-sample.pdf
+                            </td>
+                            <td width="85">
+                                <a class="tooltip-default" style="color:#fff;" data-toggle="tooltip" data-placement="left" data-original-title="View File" onclick="showAjaxModal('');">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a class="tooltip-default" style="color:#fff;" data-toggle="tooltip" data-placement="left" data-original-title="Download File" href="">
+                                    <i class="fa fa-download"></i>
+                                </a>
+                                <a class="tooltip-default" style="color:#fff;" data-toggle="tooltip" data-placement="left" data-original-title="Delete File" onclick="confirm_modal('', '');">
+                                    <i class="fa fa-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="5"><i class="fa fa-dot-circle-o"></i></td>
+                            <td>
+                                <i class="fa fa-file-text"></i> sample.1.doc
+                            </td>
+                            <td width="85">
+                                <a class="tooltip-default" style="color: #fff;" data-toggle="tooltip" data-placement="left" data-original-title="View File" onclick=" showAjaxModal(''); ">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a class="tooltip-default" style="color: #fff;" data-toggle="tooltip" data-placement="left" data-original-title="Download File" href="">
+                                    <i class="fa fa-download"></i>
+                                </a>
+                                <a class="tooltip-default" style="color: #fff;" data-toggle="tooltip" data-placement="left" data-original-title="Delete File" onclick=" confirm_modal('', ''); ">
+                                    <i class="fa fa-trash"></i>
+                                </a>
+                            </td>
+                        <tr>
+                            <td width="5"><i class="fa fa-dot-circle-o"></i></td>
+                            <td>
+                                <i class="fa fa-file-image-o"></i> Logo-company.jpg
+                            </td>
+                            <td width="85">
+                                <a class="tooltip-default" style="color:#fff;" data-toggle="tooltip" data-placement="left" data-original-title="View File" onclick="showAjaxModal('');">
+                                    <i class="fa fa-eye"></i>
+                                </a>
+                                <a class="tooltip-default" style="color:#fff;" data-toggle="tooltip" data-placement="left" data-original-title="Download File" href="">
+                                    <i class="fa fa-download"></i>
+                                </a>
+                                <a class="tooltip-default" style="color:#fff;" data-toggle="tooltip" data-placement="left" data-original-title="Delete File" onclick="confirm_modal('', '');">
+                                    <i class="fa fa-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+
+                <div class="text-center mtop20">
+                    <a href="#" class="btn btn-sm btn-primary">Add files</a>
+
+                </div>
+            </div>
+
+        </section>
+        <div class="panel panel-primary" data-collapsed="0">
+            <div class="panel-heading">
+                <div class="panel-title"><i class="fa fa-users"></i> @Html.DisplayNameFor(model => model.Client)</div>
+                <div class="panel-options">
+
+                </div>
+            </div>
+            <div class="panel-body">
+                <table width="100%" border="0">
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" width="60">
+                                <img src="~/Content/img/user.jpg" alt="" class="img-circle" width="44">
+                            </td>
+                            <td>
+                                <h4>@Html.DisplayFor(model => model.Client.Name)</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Call Skype" href="skype:@Html.DisplayFor(model => model.Client.Skype)" style="color: #fff;">
+                                    <i class="fa fa-skype"></i>
+                                </a>
+                                <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Send Email" href="mailto:@Html.DisplayFor(model => model.Client.Email)" rel="external" style="color: #fff;">
+                                    <i class="fa icon-mail"></i>
+                                </a>
+                                <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Call Phone" href="tel:@Html.DisplayFor(model => model.Client.Phone)" target="_blank" style="color: #fff;">
+                                    <i class="fa fa-phone"></i>
+                                </a>
+                                <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Facebook Profile" href="http://www.facebook.com/@Html.DisplayFor(model => model.Client.Facebook)" style="color: #fff;" target="_blank">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Twitter Profile" href="http://www.twitter.com/@Html.DisplayFor(model => model.Client.Twitter)" style="color: #fff;" target="_blank">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="LinkedIn Profile" href="http://www.linkedin.com/@Html.DisplayFor(model => model.Client.LinkedIn)" style="color: #fff;" target="_blank">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                                <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Website" href="http://@Html.DisplayFor(model => model.Client.Website)" style="color: #fff;" target="_blank">
+                                    <i class="fa fa-globe"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <div class="panel panel-primary" data-collapsed="0">
+            <div class="panel-heading">
+                <div class="panel-title"><i class="fa fa-user"></i> @Html.DisplayNameFor(model => model.User)</div>
+                <div class="panel-options">
+
+                </div>
+            </div>
+            <div class="panel-body">
+                <table width="100%" border="0">
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" width="60">
+                                <img src="~/Content/img/user.jpg" alt="" class="img-circle" width="44">
+                            </td>
+                            <td>
+                                <h4>@Html.DisplayFor(model => model.User.Name)</h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Call Skype" href="skype:@Html.DisplayFor(model => model.User.Email)" style="color: #fff;">
+                                    <i class="fa fa-skype"></i>
+                                </a>
+                                <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Send Email" href="mailto:@Html.DisplayFor(model => model.User.Email)" style="color: #fff;">
+                                    <i class="fa icon-mail"></i>
+                                </a>
+                                <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Call Phone" href="tel:@Html.DisplayFor(model => model.User.PhoneNumber)" style="color: #fff;">
+                                    <i class="fa fa-phone"></i>
+                                </a>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--staff list ends here -->
+            </div>
+        </div>
+    </div>*@
+
+    </div>
+    <button class="btn btn-info icon-left" style="margin-top: 15px;">
+        @Html.ActionLink("Back to List", "Index")
+    </button>
+    <!-- page end-->
+    </section>
+
+    <br />
+

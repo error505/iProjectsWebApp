@@ -1,0 +1,70 @@
+﻿@model iProjects.Models.Clients
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Client Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">       
+    </dl>
+</div>
+<div class="col-md-4">
+    <div class="panel panel-colorful" data-collapsed="0">
+        <div class="panel-heading">
+            <div class="panel-title"><i class="fa fa-users"></i> @Html.DisplayNameFor(model => model.Name)</div>
+            <div class="panel-options">
+
+            </div>
+        </div>
+        <div class="panel-body">
+            <table width="100%" border="0">
+                <tbody>
+                <tr>
+                    <td rowspan="2" width="60">
+                        <img src="~/Content/img/user.jpg" alt="" class="img-circle" width="44">
+                    </td>
+                    <td>
+                        <h4>@Html.DisplayFor(model => model.Name)</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Call Skype" href="skype:@Html.DisplayFor(model => model.Skype)" style="color: #fff;">
+                            <i class="fa fa-skype"></i>
+                        </a>
+                        <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Send Email" href="mailto:@Html.DisplayFor(model => model.Email)" rel="external" style="color: #fff;">
+                            <i class="fa icon-mail"></i>
+                        </a>
+                        <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Call Phone" href="tel:@Html.DisplayFor(model => model.Phone)" target="_blank" style="color: #fff;">
+                            <i class="fa fa-phone"></i>
+                        </a>
+                        <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Facebook Profile" href="http://www.facebook.com/@Html.DisplayFor(model => model.Facebook)" style="color: #fff;" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Twitter Profile" href="http://www.twitter.com/@Html.DisplayFor(model => model.Twitter)" style="color: #fff;" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="LinkedIn Profile" href="http://www.linkedin.com/@Html.DisplayFor(model => model.LinkedIn)" style="color: #fff;" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Website" href="http://@Html.DisplayFor(model => model.Website)" style="color: #fff;" target="_blank">
+                            <i class="fa fa-globe"></i>
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <button class="btn btn-info icon-left" style="margin-top: 15px;">
+        @Html.ActionLink("Back to List", "Index")
+    </button>
+    <button class="btn btn-success fa fa-pencil" style="margin-top: 15px;">
+        @Html.ActionLink("Edit", "Edit", new {id = Model.ClientId})
+    </button>
+</div>
+<br/>
+

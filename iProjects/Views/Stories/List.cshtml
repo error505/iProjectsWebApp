@@ -1,0 +1,60 @@
+﻿@using iProjects.Models
+@using Microsoft.AspNet.Identity
+@model IEnumerable<iProjects.Models.Story>
+@{ Layout = null; }
+@if (Request.IsAuthenticated && User.IsInRole("Create"))
+{
+    <p type="button" class="btn btn-primary btn-block fa fa-plus">
+        @Html.ActionLink("Create New Task", "Create")
+    </p>
+}
+@{
+
+    ApplicationDbContext db = new ApplicationDbContext();
+    ApplicationUser user = db.Users.Find(User.Identity.GetUserId());
+    foreach (var item in Model)
+    {
+        if (item.IsDone == false)
+        {
+            if (item.UserId != user.Id)
+            {
+                <div class="hidden">
+                </div>
+            }
+            else
+            {
+                <div class="content tasks">
+                    <div class="task-item priority-low">
+                        <div class="task-item-content">
+                            <div class="task-item-head">@Html.DisplayFor(modelItem => item.Releases.Version)</div>
+                            <div class="task-item-subhead">
+                                <h6>@Html.DisplayFor(modelItem => item.Name)</h6>
+                                <br />
+                                @Html.Raw(item.Description)
+                            </div>
+                            <div class="task-item-date">
+                                <i class="fa fa-calendar"></i> @Html.DisplayFor(modelItem => item.User.Name) &nbsp; @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                                {
+                                    <div class="btn fa fa-edit">
+                                        @Html.ActionLink("Edit", "Edit", new { id = item.StoryId })
+                                    </div>
+                                }
+
+                                @if (Request.IsAuthenticated && User.IsInRole("ProjectUser"))
+                                {
+                                    <div class="btn fa fa-edit">
+                                        @Html.ActionLink("Edit", "Edit", new { id = item.StoryId })
+                                    </div>
+                                }
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    }
+
+
+
+}

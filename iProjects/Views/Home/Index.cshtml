@@ -1,0 +1,92 @@
+﻿@using iProjects.Models
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<body class="bg-img-num1">
+
+<div class="container">
+    <div class="row">
+        <div class="row">
+            <div class="col-md-12">               
+                    @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                    {
+                        @Html.Partial("Widgets/_MainClients")
+                        @Html.Partial("Widgets/_MainProjects")
+                        @Html.Partial("Widgets/_MainTasks")
+                        @Html.Partial("Widgets/_MainTickets")
+                    }
+                    @if (Request.IsAuthenticated && User.IsInRole("Client"))
+                    {
+                        @Html.Partial("Widgets/Clients/_CrashReport")
+                        @Html.Partial("Widgets/Clients/_SupportTicket")
+                        @Html.Partial("Widgets/Clients/_BugReport")
+                        @Html.Partial("Widgets/Clients/_Payment")
+                    }
+                    @if (Request.IsAuthenticated && User.IsInRole("ProjectUser"))
+                    {
+                        @Html.Partial("Widgets/Users/_UserProjects")
+                        @Html.Partial("Widgets/Clients/_CrashReport")
+                        @Html.Partial("Widgets/Clients/_SupportTicket")
+                        @Html.Partial("Widgets/Clients/_BugReport")
+                    }              
+            </div>
+        </div>
+        <div class="col-md-2">
+            @if (Request.IsAuthenticated)
+            {
+                @Html.Partial("Widgets/_MainProfile")
+            }
+            @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+            {
+                @Html.Partial("Widgets/_Statistic")
+                @Html.Partial("Widgets/_MainCrash")
+                @Html.Partial("Widgets/_MainBugs")
+                @Html.Partial("Widgets/_MainSupportStat")
+            }
+
+            @Html.Partial("_SiteSetings")
+        </div>
+        <div class="col-md-5" >            
+                @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                {
+                    @Html.Partial("Widgets/_MainListProjects")
+                }
+                @if (Request.IsAuthenticated && User.IsInRole("ProjectUser"))
+                {
+                    @Html.Partial("Widgets/_MainListProjects")
+                    @Html.Partial("Widgets/_MainListTasksToDo")
+                    @Html.Partial("Widgets/Users/_BugList")
+                }
+            <div class="row">
+                @if (Request.IsAuthenticated)
+                {
+                    @Html.Partial("Widgets/_Dict")
+                }
+                @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                {
+                    @Html.Partial("Widgets/_Payment")
+                }
+            </div>
+            </div>
+        <div class="col-md-5">
+            @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+            {
+                @Html.Partial("Widgets/_MainListTasksToDo")
+            }
+            @if (Request.IsAuthenticated)
+            {
+                @Html.Partial("Widgets/_MainChat")
+                @Html.Partial("Widgets/_Callendar")
+            }           
+            @Html.Partial("Widgets/_Notes")            
+        </div>
+    </div>
+</div>
+</body>
+@Html.Partial("Widgets/_Carousel")
+<script src="@Url.Content("~/Scripts/modalbox.js")"></script>
+<script>
+    var resizefunc = [];
+</script>
+

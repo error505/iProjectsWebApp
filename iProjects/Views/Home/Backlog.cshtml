@@ -1,0 +1,32 @@
+﻿@using iProjects.Models
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<body class="bg-img-num1">
+
+    
+  
+            <div class="col-md-5">
+                @if (Request.IsAuthenticated)
+                {
+                    @Html.Partial("Widgets/_MainListTasksBacklog")
+                    @Html.Partial("Widgets/_BugListBacklog")
+                }
+            </div>
+      
+
+            <div class="col-md-5">
+                @if (Request.IsAuthenticated)
+                {
+                    @Html.Partial("Widgets/_MainListStoriesBacklog")
+                }
+            </div>
+
+
+</body>
+<script src="@Url.Content("~/Scripts/modalbox.js")"></script>
+<script>
+    var resizefunc = [];
+</script>
+

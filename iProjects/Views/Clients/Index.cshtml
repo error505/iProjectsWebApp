@@ -1,0 +1,97 @@
+﻿@model IEnumerable<iProjects.Models.Clients>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@if (Request.IsAuthenticated && User.IsInRole("Admin"))
+{
+    <p type="button" class="btn btn-success">
+        @Html.ActionLink("Create New", "Create")
+    </p>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Company)
+        </th>
+        <th>
+            Contact
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Note)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Company)
+            </td>
+            
+            <td class=" ">
+                <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Call Skype" href="skype:@Html.DisplayFor(modelItem => item.Skype)" style="color:#bbb;">
+                    <i class="fa fa-skype"></i>
+                </a>
+                <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Send Email" href="mailto:@Html.DisplayFor(modelItem => item.Email)" style="color:#bbb;">
+                    <i class="fa icon-mail"></i>
+                </a>
+                <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Call Phone" href="tel:@Html.DisplayFor(modelItem => item.Phone)" style="color:#bbb;">
+                    <i class="fa fa-phone"></i>
+                </a>
+                <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Facebook Profile" href="http://www.facebook.com/@Html.DisplayFor(modelItem => item.Facebook)" style="color:#bbb;" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Twitter Profile" href="http://www.twitter.com/@Html.DisplayFor(modelItem => item.Twitter)" style="color:#bbb;" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Linkedin Profile" href="http://www.linkedin.com/@Html.DisplayFor(modelItem => item.LinkedIn)" style="color:#bbb;" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a class="tooltip-primary" data-toggle="tooltip" data-placement="top" data-original-title="Website" href="http://@Html.DisplayFor(modelItem => item.Website)" style="color: #bbb;" target="_blank">
+                    <i class="fa fa-globe"></i>
+                </a>
+            </td>
+           <td>
+                @Html.DisplayFor(modelItem => item.Note)
+            </td>
+            <td>
+                @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                {
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-clean dropdown-toggle" data-toggle="dropdown">
+                            Action <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu5">
+                            <li>@Html.ActionLink("Edit", "Edit", new { id = item.ClientId })</li>
+                            <li>@Html.ActionLink("Details", "Details", new { id = item.ClientId })</li>
+                            <li>@Html.ActionLink("Delete", "Delete", new { id = item.ClientId })</li>
+                        </ul>
+                    </div>
+                }
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,11 @@
+﻿@{ Layout = null; }
+
+@using Microsoft.Ajax.Utilities
+@model iProjects.Models.Invoice
+
+@if (@Model.PaymentId != 0)
+{     @Model.PaymentId }
+else
+{
+    <div>0</div>
+}

@@ -1,0 +1,87 @@
+﻿@using Microsoft.AspNet.Identity
+@using System.Security.Claims
+@using iProjects.Toast
+@if (Request.IsAuthenticated)
+{
+    var identity = (ClaimsIdentity)User.Identity;
+    var name = identity.FindFirstValue(ClaimTypes.GivenName) ?? identity.GetUserName();
+    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm", @class = "navbar-right" }))
+    {
+        @Html.AntiForgeryToken()
+    <ul class="nav navbar-nav navbar-right top-navbar">
+        <li class="dropdown iconify hide-phone">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i><span class="label label-danger absolute">
+@{
+    Html.RenderAction("Notifications", "TasksToDoes");
+}
+</span></a>
+           @{
+        Html.RenderAction("TasksNotyList", "TasksToDoes");
+        }
+        </li>
+        <li class="dropdown iconify hide-phone">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i><span class="label label-danger absolute">@{
+        Html.RenderAction("Notifications", "InternalMails");
+            }</span></a>
+            @{
+        Html.RenderAction("ListNotifications", "InternalMails");
+            }
+        </li>
+        @*<li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa icon-th"></i></a>
+            <div class="dropdown-menu grid-dropdown">
+                <div class="row stacked">
+                    <div class="col-xs-4">
+                        <a href="javascript:;" data-app="notes-app" data-status="active"><i class="icon-edit"></i>Notes</a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="javascript:;" data-app="todo-app" data-status="active"><i class="icon-check"></i>Todo List</a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="javascript:;" data-app="calc" data-status="inactive" class="clickable"><i class="fa fa-calculator"></i>Calculator</a>
+                    </div>
+                </div>
+                <div class="row stacked">
+                    <div class="col-xs-4">
+                        <a href="javascript:;" data-app="weather-widget" data-status="active"><i class="icon-cloud-3"></i>Weather</a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="javascript:;" data-app="calendar-widget2" data-status="active"><i class="icon-calendar"></i>Calendar</a>
+                    </div>
+                    <div class="col-xs-4">
+                        <a href="javascript:;" data-app="stock-app" data-status="inactive" class="clickable"><i class="icon-chart-line"></i>Stocks</a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </li>*@
+        <li class="dropdown iconify hide-phone"><a href="#" onclick="javascript:toggle_fullscreen()"><i class="icon-resize-full-2"></i></a></li>
+        <li class="dropdown topbar-profile">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa icon-user"></span> <i class="fa fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+                <li>@Html.ActionLink("Change Password", "ChangePassword", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })</li>
+                <li>@Html.ActionLink("Account " + name + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })</li>
+                <li class="divider"></li>
+                <li><a href="#"><i class="icon-help-2"></i> Help</a></li>
+                <li><a href="/Account/LockOutScreen"><i class="icon-lock-1"></i> Lock me</a></li>
+                <li><a class="md-trigger" href="javascript:document.getElementById('logoutForm').submit()" data-modal="logout-modal"><i class="icon-logout-1"></i> Logout</a></li>
+            </ul>
+        </li>
+        @*<li class="right-opener">
+            <a href="javascript:;" class="open-right"><i class="fa fa-angle-double-left"></i><i class="fa fa-angle-double-right"></i></a>
+        </li>*@
+    </ul>
+    
+    }
+}
+            else
+            {
+               <ul class="nav navbar-nav navbar-right">
+                 <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+                 <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+               </ul>
+            }
+
+
+
+	

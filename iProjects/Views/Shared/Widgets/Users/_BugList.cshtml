@@ -1,0 +1,39 @@
+﻿
+    <div class="block block-drop-shadow portlets">
+        <div class="head bg-default bg-light-rtl">
+            <h2>Reported Bugs</h2>
+            <div class="side pull-right">
+                <ul class="buttons">
+                    <li><a href="#"><span class="fa fa-plus"></span></a></li>
+                    <li><a href="#"><span class="fa fa-cogs"></span></a></li>
+                </ul>
+            </div>
+            <div class="head-panel nm">
+                <a href="#" class="hp-info pull-left">
+                    <div class="hp-icon">
+                        <span class="fa fa-download"></span>
+                    </div>
+                    <span class="hp-main">@{ Html.RenderAction("Statistics", "BugReports"); }</span>
+                    <span class="hp-sm">To Solve</span>
+                </a>
+            </div>
+        </div>
+
+        @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+        {
+            {
+                Html.RenderAction("List", "BugReports");
+            }
+        }
+        @if (Request.IsAuthenticated && User.IsInRole("ProjectUser"))
+        {
+            {
+                Html.RenderAction("List", "BugReports");
+            }
+        }
+
+    </div>
+
+
+
+

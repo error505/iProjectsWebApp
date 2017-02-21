@@ -1,0 +1,147 @@
+﻿@model IEnumerable<iProjects.Models.BugReport>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p type="button" class="btn btn btn-success">
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Type Of Bug
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Created)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Creator)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProductName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BugDetails)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @{
+                if (item.BugType.TypeOfBug == "Minor")
+                {
+                    <div class="label label-info">
+                        <div class="hidden">
+                            @Html.DisplayFor(modelItem => item.BugType.TypeOfBug)
+                        </div>
+                        Minor
+                    </div>
+                }
+                if (item.BugType.TypeOfBug == "Major")
+                {
+                    <div class="label label-warning">
+                        <div class="hidden">
+                            @Html.DisplayFor(modelItem => item.BugType.TypeOfBug)
+                        </div>
+                        Major
+                    </div>
+                }
+                if (item.BugType.TypeOfBug == "Critical")
+                {
+                    <div class="label label-danger">
+                        <div class="hidden">
+                            @Html.DisplayFor(modelItem => item.BugType.TypeOfBug)
+                        </div>
+                        Critical
+                    </div>
+                }
+                if (item.BugType.TypeOfBug == "Not Set")
+                {
+                    <div class="label label-success">
+                        <div class="hidden">
+                            @Html.DisplayFor(modelItem => item.BugType.TypeOfBug)
+                        </div>
+                        Not Set
+                    </div>
+                }
+                if (item.BugType.TypeOfBug == "")
+                {
+                    <div class="label label-success">
+                        <div class="hidden">
+                            @Html.DisplayFor(modelItem => item.BugType.TypeOfBug)
+                        </div>
+                        No Status
+                    </div>
+                }
+    }
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Created)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Creator)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProductName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BugDetails)
+        </td>
+        <td>
+            @{
+                if (item.Status == false)
+                {
+                    <div class="label label-warning">
+                        <div class="hidden">
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </div>
+                        Opened
+                    </div>
+                }
+                else
+                {
+                    <div class="label label-success">
+                        <div class="hidden">
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </div>
+                        Finished
+                    </div>
+                }
+            }
+        </td>
+        <td>
+            <div class="btn-group">
+                <button type="button" class="btn btn-default btn-clean dropdown-toggle" data-toggle="dropdown">
+                    Action <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu6">
+                    <li>@Html.ActionLink("Edit", "Edit", new { id = item.Id })</li>
+                    <li>@Html.ActionLink("Details", "Details", new { id = item.Id })</li>
+                    <li>@Html.ActionLink("Delete", "Delete", new { id = item.Id })</li>
+</ul>
+            </div>
+        </td>
+    </tr>
+}
+
+</table>

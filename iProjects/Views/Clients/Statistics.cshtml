@@ -1,0 +1,12 @@
+﻿@{ Layout = null; }
+
+@using Microsoft.Ajax.Utilities
+@model iProjects.Models.Clients
+
+@if (@Model.ClientId != 0)
+{     @Model.ClientId }
+else
+{
+    <div>0</div>
+}
+

@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+
+
+<head>
+    <style>
+        .form-css {
+            display: block;
+            padding: 15px;
+            position: relative;
+        }
+
+        .navbar-ex1-collapse {
+        }
+    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - iProjectManagement</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/toastr")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/clock.css" rel="stylesheet" />
+    @*<link href="~/Scripts/js/plugins/jqueryui/ui-lightness/jquery-ui-1.10.4.custom.min.css" rel="stylesheet"/>*@
+    <link href="~/Scripts/js/plugins/fontello/css/fontello.css" rel="stylesheet" />
+    <link href="~/Scripts/js/plugins/animate-css/animate.min.css" rel="stylesheet" />
+    <link href="~/Scripts/js/plugins/nifty-modal/css/component.css" rel="stylesheet" />
+    <link href="~/Scripts/js/plugins/magnific-popup/magnific-popup.css" rel="stylesheet" />
+    <link href="~/Scripts/js/plugins/ios7-switch/ios7-switch.css" rel="stylesheet" />
+    <link href="~/Scripts/js/plugins/pace/pace.css" rel="stylesheet" />
+    <link href="~/Scripts/js/plugins/sortable/sortable-theme-bootstrap.css" rel="stylesheet" />
+    <link href="~/Scripts/js/plugins/jquery-icheck/skins/all.css" rel="stylesheet" />
+    <link href="~/Scripts/js/plugins/bootstrap-xeditable/css/bootstrap-editable.css" rel="stylesheet"/>
+    <link href="~/Scripts/js/plugins/jquery-easypiechart/jquery.easy-pie-chart.css" rel="stylesheet" />
+    <link href="~/Scripts/js/plugins/morrischart/morris.css" rel="stylesheet" />
+    @RenderSection("head", required: false)
+</head>
+@*<body onload="StartTimers();" onmousemove="ResetTimers();">
+    <div id="timeout">
+        <h1>Session About To Timeout</h1>
+        <p>
+            You will be automatically logged out in 1 minute.<br />
+            To remain logged in move your mouse over this window.
+    </div>*@
+<body>
+
+    @if (Request.IsAuthenticated)
+    {
+        <nav class="navbar" role="navigation">
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand"><img src="~/Content/img/logo.png" /></a>
+                        @Html.ActionLink("iManagement", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    </div>
+                    <div class="collapse navbar-collapse navbar-ex1-collapse">
+                        <ul class="nav navbar-nav side">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="fa fa-dashboard"></span> Dashboard</a>
+                                <ul class="dropdown-menu">
+                                    <li>@Html.ActionLink("Dashboard", "Index", "Home")</li>
+                                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                                </ul>
+                            </li>
+                            @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                            {
+                                @Html.Partial("Menu/_AdminMenu")
+                            }
+                            @if (Request.IsAuthenticated && User.IsInRole("ProjectUser"))
+                            {
+                                @Html.Partial("Menu/_ProjecUser")
+                            }
+                            @if (Request.IsAuthenticated && User.IsInRole("Client"))
+                            {
+                                @Html.Partial("Menu/_ProjecUser")
+                            }
+                        </ul>
+                        @Html.Partial("_LoginPartial")
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    }
+    @Html.Partial("_Toastr")
+    <div class="container body-content">
+        @RenderBody()
+        @if (Request.IsAuthenticated)
+        {
+            @Html.Partial("_Footer")
+
+        }
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/toastr")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/tinymce")
+    @RenderSection("scripts", required: false)
+    <script src="@Url.Content("~/Scripts/js/plugins/jquery/jquery-ui.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/jqueryui/jquery-ui-1.10.4.custom.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/jquery-ui-touch/jquery.ui.touch-punch.min.js")"></script>
+    <script src="~/Scripts/js/plugins/bootstrap-fileinput/bootstrap.file-input.js"></script>
+    <script src="@Url.Content("~/Scripts/TimeOut.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/datatables/jquery.dataTables.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/jquery/jquery-migrate.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/jquery/globalize.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/bootstrap/bootstrap.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/uniform/jquery.uniform.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/ibutton/jquery.ibutton.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/select2/select2.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/tagsinput/jquery.tagsinput.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/jquery/jquery-ui-timepicker-addon.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/noty/jquery.noty.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/noty/layouts/topCenter.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/noty/layouts/topLeft.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/noty/layouts/topRight.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/noty/themes/default.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/fancybox/jquery.fancybox.pack.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/knob/jquery.knob.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/flot/jquery.flot.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/flot/jquery.flot.pie.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/flot/jquery.flot.resize.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/sparkline/jquery.sparkline.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/fullcalendar/fullcalendar.min.js")"></script>
+    <script src="@Url.Content("https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/shbrush/XRegExp.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/shbrush/shCore.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/shbrush/shBrushXml.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/shbrush/shBrushJScript.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/shbrush/shBrushCss.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/cleditor/jquery.cleditor.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/plupload/plupload.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/plupload/plupload.gears.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/plupload/plupload.silverlight.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/plupload/plupload.flash.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/plupload/plupload.browserplus.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/plupload/plupload.html4.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/plupload/plupload.html5.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/plupload/jquery.plupload.queue/jquery.plupload.queue.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/elfinder/elfinder.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/jquery-blockui/jquery.blockUI.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/jquery-nestable/jquery.nestable.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/actions.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/charts.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/maps.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/settings.js")"></script>
+    <script src="@Url.Content("~/Content/Plugins/bootstrap-fileupload/bootstrap-fileupload.min.js")"></script>
+    <script src="@Url.Content("~/Content/Plugins/select2/select2.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/plugins/platform.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.signalR-2.1.2.js")"></script>
+    <script src="~/signalr/hubs"></script>
+    <script src="@Url.Content("~/Scripts/bootstrap.js")"></script>
+    <script src="~/Scripts/js/plugins/bootstrap-bootbox/bootbox.min.js"></script>
+    <script src="~/Scripts/js/plugins/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="~/Scripts/js/plugins/bootstrap-select2/select2.min.js"></script>
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/js/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <script src="~/Scripts/js/plugins/jquery-sparkline/jquery-sparkline.js"></script>
+    <script src="~/Scripts/js/plugins/nifty-modal/js/classie.js"></script>
+    <script src="~/Scripts/js/plugins/nifty-modal/js/modalEffects.js"></script>
+    <script src="~/Scripts/js/plugins/sortable/sortable.min.js"></script>
+    <script src="~/Scripts/js/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="~/Scripts/js/plugins/pace/pace.min.js"></script>
+    @*<script src="~/Scripts/js/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>*@
+    <script src="~/Scripts/js/plugins/jquery-icheck/icheck.min.js"></script>
+    <script src="~/Scripts/js/plugins/bootstrap-xeditable/js/bootstrap-editable.min.js"></script>
+    <script src="~/Scripts/js/plugins/fastclick/fastclick.js"></script>
+    <script src="~/Scripts/js/plugins/jquery-animate-numbers/jquery.animateNumbers.js"></script>
+    <script src="~/Scripts/js/plugins/prettify/prettify.js"></script>
+    <script src="~/Scripts/js/plugins/summernote/summernote.js"></script>
+    <script src="~/Scripts/js/plugins/bootstrap-inputmask/inputmask.js"></script>
+    <script src="~/Scripts/js/plugins/bootstrap-xeditable/demo/jquery.mockjax.js"></script>
+    <script src="~/Scripts/js/plugins/bootstrap-select2/select2.min.js"></script>
+    <script src="~/Scripts/js/plugins/bootstrap-typeahead/bootstrap3-typeahead.min.js"></script>
+    <script src="~/Scripts/js/plugins/ckeditor/ckeditor.js"></script>
+    <script src="~/Scripts/js/plugins/ckeditor/adapters/jquery.js"></script>
+    <script src="~/Scripts/js/plugins/Jquery-Cookie/jquery.cookie.js"></script>
+    <script src="~/Scripts/js/plugins/Notes/notes.js"></script>
+    <script src="~/Scripts/js/plugins/CalendarWidget/calendar.js"></script>
+    <script src="~/Scripts/js/plugins/bootstrap-calendar/js/bic_calendar.min.js"></script>
+    <script src="~/Scripts/js/plugins/maskedinput/jquery.maskedinput.min.js"></script>
+    <script src="~/Scripts/js/plugins/validationengine/jquery.validationEngine.js"></script>
+    <script src="~/Scripts/js/plugins/jquery-easypiechart/easypiechart.min.js"></script>
+<script src="~/Scripts/js/plugins/jquery-easypiechart/jquery.easypiechart.min.js"></script>
+    <script src="~/Scripts/js/plugins/raphael/raphael-min.js"></script>
+<script src="~/Scripts/js/plugins/morrischart/morris.js"></script>
+    <script src="~/Scripts/js/plugins/jquery-wizard/jquery.easyWizard.js"></script>
+<script src="~/Scripts/js/plugins/stock-chart.js"></script>
+<script src="~/Scripts/js/plugins/calculator.js"></script>
+    <script src="~/Scripts/js/plugins/ios7-switch/ios7.switch.js"></script>
+    <script>
+        var resizefunc = [];
+    </script>
+</body>
+@*<script src="~/Scripts/clock.js"></script>*@
+
+
+
+@*</body>*@
+

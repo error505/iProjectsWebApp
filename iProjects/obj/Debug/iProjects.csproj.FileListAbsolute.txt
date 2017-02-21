@@ -1,0 +1,694 @@
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\obj\Debug\iProjects.csprojResolveAssemblyReference.cache
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\iProjects.dll.config
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\iProjects.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\iProjects.pdb
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Antlr3.Runtime.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\EntityFramework.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\EntityFramework.SqlServer.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Core.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Owin.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.Owin.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.Owin.Host.SystemWeb.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.Owin.Security.Cookies.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.Owin.Security.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.Owin.Security.Facebook.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.Owin.Security.Google.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.Owin.Security.OAuth.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.Owin.Security.Twitter.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.Web.Infrastructure.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Newtonsoft.Json.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Owin.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\System.Web.Helpers.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\System.Web.Mvc.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\System.Web.Optimization.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\System.Web.Razor.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\System.Web.WebPages.Deployment.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\System.Web.WebPages.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\System.Web.WebPages.Razor.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\WebGrease.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\System.Web.Helpers.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\System.Web.Mvc.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\System.Web.Optimization.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\System.Web.Razor.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\System.Web.WebPages.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\System.Web.WebPages.Deployment.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\System.Web.WebPages.Razor.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Antlr3.Runtime.pdb
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Newtonsoft.Json.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\EntityFramework.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\EntityFramework.SqlServer.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Core.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Owin.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.Owin.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.Owin.Host.SystemWeb.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.Owin.Security.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.Owin.Security.Facebook.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.Owin.Security.Cookies.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.Owin.Security.OAuth.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.Owin.Security.Google.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.Owin.Security.Twitter.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\obj\Debug\iProjects.dll
+c:\users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\obj\Debug\iProjects.pdb
+C:\Users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\System.Net.Http.Formatting.dll
+C:\Users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\System.Web.Http.dll
+C:\Users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\System.Web.Http.WebHost.dll
+C:\Users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\System.Net.Http.Formatting.xml
+C:\Users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\System.Web.Http.xml
+C:\Users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\bin\System.Web.Http.WebHost.xml
+C:\Users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\obj\Debug\iProjects.Migrations.InitialCreate.resources
+C:\Users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\obj\Debug\iProjects.csproj.GenerateResource.Cache
+C:\Users\iric__000\documents\visual studio 2013\Projects\iProjects\iProjects\obj\Debug\iProjects.Migrations._as.resources
+H:\iProjects\iProjects\bin\iProjects.dll.config
+H:\iProjects\iProjects\bin\iProjects.dll
+H:\iProjects\iProjects\bin\iProjects.pdb
+H:\iProjects\iProjects\bin\Antlr3.Runtime.dll
+H:\iProjects\iProjects\bin\EntityFramework.dll
+H:\iProjects\iProjects\bin\EntityFramework.SqlServer.dll
+H:\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Core.dll
+H:\iProjects\iProjects\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+H:\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Owin.dll
+H:\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.Core.dll
+H:\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+H:\iProjects\iProjects\bin\Microsoft.Owin.dll
+H:\iProjects\iProjects\bin\Microsoft.Owin.Host.SystemWeb.dll
+H:\iProjects\iProjects\bin\Microsoft.Owin.Security.Cookies.dll
+H:\iProjects\iProjects\bin\Microsoft.Owin.Security.dll
+H:\iProjects\iProjects\bin\Microsoft.Owin.Security.Facebook.dll
+H:\iProjects\iProjects\bin\Microsoft.Owin.Security.Google.dll
+H:\iProjects\iProjects\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+H:\iProjects\iProjects\bin\Microsoft.Owin.Security.OAuth.dll
+H:\iProjects\iProjects\bin\Microsoft.Owin.Security.Twitter.dll
+H:\iProjects\iProjects\bin\Microsoft.Web.Infrastructure.dll
+H:\iProjects\iProjects\bin\Newtonsoft.Json.dll
+H:\iProjects\iProjects\bin\Owin.dll
+H:\iProjects\iProjects\bin\System.Net.Http.Formatting.dll
+H:\iProjects\iProjects\bin\System.Web.Helpers.dll
+H:\iProjects\iProjects\bin\System.Web.Http.dll
+H:\iProjects\iProjects\bin\System.Web.Http.WebHost.dll
+H:\iProjects\iProjects\bin\System.Web.Mvc.dll
+H:\iProjects\iProjects\bin\System.Web.Optimization.dll
+H:\iProjects\iProjects\bin\System.Web.Razor.dll
+H:\iProjects\iProjects\bin\System.Web.WebPages.Deployment.dll
+H:\iProjects\iProjects\bin\System.Web.WebPages.dll
+H:\iProjects\iProjects\bin\System.Web.WebPages.Razor.dll
+H:\iProjects\iProjects\bin\WebGrease.dll
+H:\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.Core.xml
+H:\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+H:\iProjects\iProjects\bin\System.Net.Http.Formatting.xml
+H:\iProjects\iProjects\bin\System.Web.Http.xml
+H:\iProjects\iProjects\bin\System.Web.Http.WebHost.xml
+H:\iProjects\iProjects\bin\System.Web.Helpers.xml
+H:\iProjects\iProjects\bin\System.Web.Mvc.xml
+H:\iProjects\iProjects\bin\System.Web.Optimization.xml
+H:\iProjects\iProjects\bin\System.Web.Razor.xml
+H:\iProjects\iProjects\bin\System.Web.WebPages.xml
+H:\iProjects\iProjects\bin\System.Web.WebPages.Deployment.xml
+H:\iProjects\iProjects\bin\System.Web.WebPages.Razor.xml
+H:\iProjects\iProjects\bin\Antlr3.Runtime.pdb
+H:\iProjects\iProjects\bin\Newtonsoft.Json.xml
+H:\iProjects\iProjects\bin\EntityFramework.xml
+H:\iProjects\iProjects\bin\EntityFramework.SqlServer.xml
+H:\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Core.xml
+H:\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Owin.xml
+H:\iProjects\iProjects\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+H:\iProjects\iProjects\bin\Microsoft.Owin.xml
+H:\iProjects\iProjects\bin\Microsoft.Owin.Host.SystemWeb.xml
+H:\iProjects\iProjects\bin\Microsoft.Owin.Security.xml
+H:\iProjects\iProjects\bin\Microsoft.Owin.Security.Facebook.xml
+H:\iProjects\iProjects\bin\Microsoft.Owin.Security.Cookies.xml
+H:\iProjects\iProjects\bin\Microsoft.Owin.Security.OAuth.xml
+H:\iProjects\iProjects\bin\Microsoft.Owin.Security.Google.xml
+H:\iProjects\iProjects\bin\Microsoft.Owin.Security.Twitter.xml
+H:\iProjects\iProjects\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+H:\iProjects\iProjects\obj\Debug\iProjects.csproj.GenerateResource.Cache
+H:\iProjects\iProjects\obj\Debug\iProjects.dll
+H:\iProjects\iProjects\obj\Debug\iProjects.pdb
+H:\iProjects\iProjects\obj\Debug\iProjects.csprojResolveAssemblyReference.cache
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\iProjects.dll.config
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\iProjects.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\iProjects.pdb
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Antlr3.Runtime.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\EntityFramework.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\EntityFramework.SqlServer.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.Owin.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Newtonsoft.Json.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Owin.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\System.Net.Http.Formatting.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\System.Web.Helpers.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\System.Web.Http.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\System.Web.Http.WebHost.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\System.Web.Mvc.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\System.Web.Optimization.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\System.Web.Razor.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\System.Web.WebPages.Deployment.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\System.Web.WebPages.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\System.Web.WebPages.Razor.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\WebGrease.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\System.Net.Http.Formatting.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\System.Web.Http.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\System.Web.Http.WebHost.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\System.Web.Helpers.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\System.Web.Mvc.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\System.Web.Optimization.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\System.Web.Razor.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\System.Web.WebPages.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\System.Web.WebPages.Deployment.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\System.Web.WebPages.Razor.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Antlr3.Runtime.pdb
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Newtonsoft.Json.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\EntityFramework.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\EntityFramework.SqlServer.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.Owin.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\iric__000\Desktop\iProjects\iProjects\obj\Debug\iProjects.csprojResolveAssemblyReference.cache
+C:\Users\iric__000\Desktop\iProjects\iProjects\obj\Debug\iProjects.dll
+C:\Users\iric__000\Desktop\iProjects\iProjects\obj\Debug\iProjects.pdb
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\iProjects.dll.config
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\iProjects.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\iProjects.pdb
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Antlr3.Runtime.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\EntityFramework.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\EntityFramework.SqlServer.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.Owin.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Newtonsoft.Json.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Owin.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\System.Net.Http.Formatting.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\System.Web.Helpers.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\System.Web.Http.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\System.Web.Http.WebHost.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\System.Web.Mvc.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\System.Web.Optimization.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\System.Web.Razor.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\System.Web.WebPages.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\System.Web.WebPages.Razor.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\WebGrease.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\System.Net.Http.Formatting.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\System.Web.Http.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\System.Web.Http.WebHost.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\System.Web.Helpers.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\System.Web.Mvc.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\System.Web.Optimization.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\System.Web.Razor.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\System.Web.WebPages.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\System.Web.WebPages.Razor.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Antlr3.Runtime.pdb
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Newtonsoft.Json.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\EntityFramework.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\EntityFramework.SqlServer.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.Owin.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\obj\Debug\iProjects.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\obj\Debug\iProjects.pdb
+C:\Users\Igor\Desktop\iProjects\iProjects\obj\Debug\iProjects.csprojResolveAssemblyReference.cache
+J:\iProjects\iProjects\bin\iProjects.dll.config
+J:\iProjects\iProjects\bin\iProjects.dll
+J:\iProjects\iProjects\bin\iProjects.pdb
+J:\iProjects\iProjects\bin\Antlr3.Runtime.dll
+J:\iProjects\iProjects\bin\EntityFramework.dll
+J:\iProjects\iProjects\bin\EntityFramework.SqlServer.dll
+J:\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Core.dll
+J:\iProjects\iProjects\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+J:\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Owin.dll
+J:\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.Core.dll
+J:\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+J:\iProjects\iProjects\bin\Microsoft.Owin.dll
+J:\iProjects\iProjects\bin\Microsoft.Owin.Host.SystemWeb.dll
+J:\iProjects\iProjects\bin\Microsoft.Owin.Security.Cookies.dll
+J:\iProjects\iProjects\bin\Microsoft.Owin.Security.dll
+J:\iProjects\iProjects\bin\Microsoft.Owin.Security.Facebook.dll
+J:\iProjects\iProjects\bin\Microsoft.Owin.Security.Google.dll
+J:\iProjects\iProjects\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+J:\iProjects\iProjects\bin\Microsoft.Owin.Security.OAuth.dll
+J:\iProjects\iProjects\bin\Microsoft.Owin.Security.Twitter.dll
+J:\iProjects\iProjects\bin\Microsoft.Web.Infrastructure.dll
+J:\iProjects\iProjects\bin\Newtonsoft.Json.dll
+J:\iProjects\iProjects\bin\Owin.dll
+J:\iProjects\iProjects\bin\System.Net.Http.Formatting.dll
+J:\iProjects\iProjects\bin\System.Web.Helpers.dll
+J:\iProjects\iProjects\bin\System.Web.Http.dll
+J:\iProjects\iProjects\bin\System.Web.Http.WebHost.dll
+J:\iProjects\iProjects\bin\System.Web.Mvc.dll
+J:\iProjects\iProjects\bin\System.Web.Optimization.dll
+J:\iProjects\iProjects\bin\System.Web.Razor.dll
+J:\iProjects\iProjects\bin\System.Web.WebPages.Deployment.dll
+J:\iProjects\iProjects\bin\System.Web.WebPages.dll
+J:\iProjects\iProjects\bin\System.Web.WebPages.Razor.dll
+J:\iProjects\iProjects\bin\WebGrease.dll
+J:\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.Core.xml
+J:\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+J:\iProjects\iProjects\bin\System.Net.Http.Formatting.xml
+J:\iProjects\iProjects\bin\System.Web.Http.xml
+J:\iProjects\iProjects\bin\System.Web.Http.WebHost.xml
+J:\iProjects\iProjects\bin\System.Web.Helpers.xml
+J:\iProjects\iProjects\bin\System.Web.Mvc.xml
+J:\iProjects\iProjects\bin\System.Web.Optimization.xml
+J:\iProjects\iProjects\bin\System.Web.Razor.xml
+J:\iProjects\iProjects\bin\System.Web.WebPages.xml
+J:\iProjects\iProjects\bin\System.Web.WebPages.Deployment.xml
+J:\iProjects\iProjects\bin\System.Web.WebPages.Razor.xml
+J:\iProjects\iProjects\bin\Antlr3.Runtime.pdb
+J:\iProjects\iProjects\bin\Newtonsoft.Json.xml
+J:\iProjects\iProjects\bin\EntityFramework.xml
+J:\iProjects\iProjects\bin\EntityFramework.SqlServer.xml
+J:\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Core.xml
+J:\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Owin.xml
+J:\iProjects\iProjects\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+J:\iProjects\iProjects\bin\Microsoft.Owin.xml
+J:\iProjects\iProjects\bin\Microsoft.Owin.Host.SystemWeb.xml
+J:\iProjects\iProjects\bin\Microsoft.Owin.Security.xml
+J:\iProjects\iProjects\bin\Microsoft.Owin.Security.Facebook.xml
+J:\iProjects\iProjects\bin\Microsoft.Owin.Security.Cookies.xml
+J:\iProjects\iProjects\bin\Microsoft.Owin.Security.OAuth.xml
+J:\iProjects\iProjects\bin\Microsoft.Owin.Security.Google.xml
+J:\iProjects\iProjects\bin\Microsoft.Owin.Security.Twitter.xml
+J:\iProjects\iProjects\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+J:\iProjects\iProjects\obj\Debug\iProjects.csproj.GenerateResource.Cache
+J:\iProjects\iProjects\obj\Debug\iProjects.dll
+J:\iProjects\iProjects\obj\Debug\iProjects.pdb
+J:\iProjects\iProjects\obj\Debug\iProjects.csprojResolveAssemblyReference.cache
+C:\Users\iric__000\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.pyment.resources
+C:\Users\iric__000\Desktop\iProjects\iProjects\obj\Debug\iProjects.csproj.GenerateResource.Cache
+J:\iProjects\iProjects\obj\Debug\iProjects.Migrations.pyment.resources
+C:\Users\iric__000\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.invoice.resources
+K:\iProjects\iProjects\bin\iProjects.dll.config
+K:\iProjects\iProjects\bin\iProjects.dll
+K:\iProjects\iProjects\bin\iProjects.pdb
+K:\iProjects\iProjects\bin\Antlr3.Runtime.dll
+K:\iProjects\iProjects\bin\EntityFramework.dll
+K:\iProjects\iProjects\bin\EntityFramework.SqlServer.dll
+K:\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Core.dll
+K:\iProjects\iProjects\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+K:\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Owin.dll
+K:\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.Core.dll
+K:\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+K:\iProjects\iProjects\bin\Microsoft.Owin.dll
+K:\iProjects\iProjects\bin\Microsoft.Owin.Host.SystemWeb.dll
+K:\iProjects\iProjects\bin\Microsoft.Owin.Security.Cookies.dll
+K:\iProjects\iProjects\bin\Microsoft.Owin.Security.dll
+K:\iProjects\iProjects\bin\Microsoft.Owin.Security.Facebook.dll
+K:\iProjects\iProjects\bin\Microsoft.Owin.Security.Google.dll
+K:\iProjects\iProjects\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+K:\iProjects\iProjects\bin\Microsoft.Owin.Security.OAuth.dll
+K:\iProjects\iProjects\bin\Microsoft.Owin.Security.Twitter.dll
+K:\iProjects\iProjects\bin\Microsoft.Web.Infrastructure.dll
+K:\iProjects\iProjects\bin\Newtonsoft.Json.dll
+K:\iProjects\iProjects\bin\Owin.dll
+K:\iProjects\iProjects\bin\System.Net.Http.Formatting.dll
+K:\iProjects\iProjects\bin\System.Web.Helpers.dll
+K:\iProjects\iProjects\bin\System.Web.Http.dll
+K:\iProjects\iProjects\bin\System.Web.Http.WebHost.dll
+K:\iProjects\iProjects\bin\System.Web.Mvc.dll
+K:\iProjects\iProjects\bin\System.Web.Optimization.dll
+K:\iProjects\iProjects\bin\System.Web.Razor.dll
+K:\iProjects\iProjects\bin\System.Web.WebPages.Deployment.dll
+K:\iProjects\iProjects\bin\System.Web.WebPages.dll
+K:\iProjects\iProjects\bin\System.Web.WebPages.Razor.dll
+K:\iProjects\iProjects\bin\WebGrease.dll
+K:\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.Core.xml
+K:\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+K:\iProjects\iProjects\bin\System.Net.Http.Formatting.xml
+K:\iProjects\iProjects\bin\System.Web.Http.xml
+K:\iProjects\iProjects\bin\System.Web.Http.WebHost.xml
+K:\iProjects\iProjects\bin\System.Web.Helpers.xml
+K:\iProjects\iProjects\bin\System.Web.Mvc.xml
+K:\iProjects\iProjects\bin\System.Web.Optimization.xml
+K:\iProjects\iProjects\bin\System.Web.Razor.xml
+K:\iProjects\iProjects\bin\System.Web.WebPages.xml
+K:\iProjects\iProjects\bin\System.Web.WebPages.Deployment.xml
+K:\iProjects\iProjects\bin\System.Web.WebPages.Razor.xml
+K:\iProjects\iProjects\bin\Antlr3.Runtime.pdb
+K:\iProjects\iProjects\bin\Newtonsoft.Json.xml
+K:\iProjects\iProjects\bin\EntityFramework.xml
+K:\iProjects\iProjects\bin\EntityFramework.SqlServer.xml
+K:\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Core.xml
+K:\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Owin.xml
+K:\iProjects\iProjects\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+K:\iProjects\iProjects\bin\Microsoft.Owin.xml
+K:\iProjects\iProjects\bin\Microsoft.Owin.Host.SystemWeb.xml
+K:\iProjects\iProjects\bin\Microsoft.Owin.Security.xml
+K:\iProjects\iProjects\bin\Microsoft.Owin.Security.Facebook.xml
+K:\iProjects\iProjects\bin\Microsoft.Owin.Security.Cookies.xml
+K:\iProjects\iProjects\bin\Microsoft.Owin.Security.OAuth.xml
+K:\iProjects\iProjects\bin\Microsoft.Owin.Security.Google.xml
+K:\iProjects\iProjects\bin\Microsoft.Owin.Security.Twitter.xml
+K:\iProjects\iProjects\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+K:\iProjects\iProjects\obj\Debug\iProjects.csprojResolveAssemblyReference.cache
+K:\iProjects\iProjects\obj\Debug\iProjects.Migrations.pyment.resources
+K:\iProjects\iProjects\obj\Debug\iProjects.Migrations.invoice.resources
+K:\iProjects\iProjects\obj\Debug\iProjects.csproj.GenerateResource.Cache
+K:\iProjects\iProjects\obj\Debug\iProjects.dll
+K:\iProjects\iProjects\obj\Debug\iProjects.pdb
+C:\Users\iric__000\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.bugreport.resources
+J:\iProjects\iProjects\obj\Debug\iProjects.Migrations.invoice.resources
+J:\iProjects\iProjects\obj\Debug\iProjects.Migrations.bugreport.resources
+H:\iProjects\iProjects\obj\Debug\iProjects.Migrations.pyment.resources
+H:\iProjects\iProjects\obj\Debug\iProjects.Migrations.invoice.resources
+H:\iProjects\iProjects\obj\Debug\iProjects.Migrations.bugreport.resources
+J:\iProjects\iProjects\obj\Debug\iProjects.Migrations.headlines.resources
+C:\Users\iric__000\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.headlines.resources
+C:\Users\iric__000\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.project.resources
+J:\iProjects\iProjects\obj\Debug\iProjects.Migrations.project.resources
+H:\iProjects\iProjects\obj\Debug\iProjects.Migrations.headlines.resources
+H:\iProjects\iProjects\obj\Debug\iProjects.Migrations.project.resources
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\obj\Debug\iProjects.csprojResolveAssemblyReference.cache
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\obj\Debug\iProjects.Migrations.pyment.resources
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\obj\Debug\iProjects.Migrations.invoice.resources
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\obj\Debug\iProjects.Migrations.bugreport.resources
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\obj\Debug\iProjects.Migrations.headlines.resources
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\obj\Debug\iProjects.Migrations.project.resources
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\obj\Debug\iProjects.csproj.GenerateResource.Cache
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\obj\Debug\iProjects.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\iProjects.dll.config
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\iProjects.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\iProjects.pdb
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Antlr3.Runtime.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\EntityFramework.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\EntityFramework.SqlServer.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Core.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.Owin.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.Owin.Security.Cookies.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.Owin.Security.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.Owin.Security.Facebook.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.Owin.Security.Google.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.Owin.Security.OAuth.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.Owin.Security.Twitter.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.Web.Infrastructure.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Newtonsoft.Json.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Owin.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\System.Net.Http.Formatting.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\System.Web.Helpers.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\System.Web.Http.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\System.Web.Http.WebHost.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\System.Web.Mvc.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\System.Web.Optimization.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\System.Web.Razor.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\System.Web.WebPages.Deployment.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\System.Web.WebPages.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\System.Web.WebPages.Razor.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\WebGrease.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\System.Net.Http.Formatting.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\System.Web.Http.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\System.Web.Http.WebHost.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\System.Web.Helpers.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\System.Web.Mvc.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\System.Web.Optimization.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\System.Web.Razor.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\System.Web.WebPages.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\System.Web.WebPages.Deployment.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\System.Web.WebPages.Razor.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Antlr3.Runtime.pdb
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Newtonsoft.Json.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\EntityFramework.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\EntityFramework.SqlServer.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Core.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.Owin.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.Owin.Security.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.Owin.Security.Facebook.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.Owin.Security.Cookies.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.Owin.Security.OAuth.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.Owin.Security.Google.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.Owin.Security.Twitter.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\obj\Debug\iProjects.pdb
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\obj\Debug\iProjects.Migrations.nove.resources
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\obj\Debug\iProjects.Migrations.asda.resources
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\obj\Debug\iProjects.Migrations.sadw.resources
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\FluentNHibernate.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Iesi.Collections.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\NHibernate.dll
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\FluentNHibernate.pdb
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\FluentNHibernate.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\Iesi.Collections.xml
+D:\C++ Seminarski rad Igor Iric 80-11VPI\iProjects\iProjects\bin\NHibernate.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\FluentNHibernate.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Iesi.Collections.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\NHibernate.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\FluentNHibernate.pdb
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\FluentNHibernate.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\Iesi.Collections.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\NHibernate.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\PagedList.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\PagedList.Mvc.dll
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\PagedList.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\bin\PagedList.Mvc.xml
+C:\Users\Igor\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.sad.resources
+C:\Users\Igor\Desktop\iProjects\iProjects\obj\Debug\iProjects.csproj.GenerateResource.Cache
+C:\Users\Igor\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.Story.resources
+C:\Users\Igor\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.RelSt.resources
+C:\Users\Igor\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.Prior.resources
+C:\Users\Igor\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.ProjPr.resources
+C:\Users\Igor\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.SprintActive.resources
+C:\Users\Igor\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.SprintFinish.resources
+C:\Users\Igor\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.pp.resources
+C:\Users\Igor\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.Files.resources
+C:\Users\Igor\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.sd.resources
+C:\Users\Igor\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.dsa.resources
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\iProjects.dll.config
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\iProjects.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\iProjects.pdb
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Antlr3.Runtime.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\EntityFramework.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\EntityFramework.SqlServer.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\FluentNHibernate.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Iesi.Collections.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.Owin.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Newtonsoft.Json.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\NHibernate.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Owin.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\PagedList.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\PagedList.Mvc.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\System.Net.Http.Formatting.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\System.Web.Helpers.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\System.Web.Http.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\System.Web.Http.WebHost.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\System.Web.Mvc.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\System.Web.Optimization.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\System.Web.Razor.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\System.Web.WebPages.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\System.Web.WebPages.Razor.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\WebGrease.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\FluentNHibernate.pdb
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\FluentNHibernate.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Iesi.Collections.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\NHibernate.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\PagedList.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\PagedList.Mvc.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\System.Net.Http.Formatting.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\System.Web.Http.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\System.Web.Http.WebHost.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\System.Web.Helpers.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\System.Web.Mvc.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\System.Web.Optimization.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\System.Web.Razor.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\System.Web.WebPages.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\System.Web.WebPages.Razor.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Antlr3.Runtime.pdb
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Newtonsoft.Json.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\EntityFramework.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\EntityFramework.SqlServer.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.Owin.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\obj\Debug\iProjects.csprojResolveAssemblyReference.cache
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.sad.resources
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.Story.resources
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.RelSt.resources
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.Prior.resources
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.ProjPr.resources
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.SprintActive.resources
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.SprintFinish.resources
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.pp.resources
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.Files.resources
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.sd.resources
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.dsa.resources
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\obj\Debug\iProjects.csproj.GenerateResource.Cache
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\obj\Debug\iProjects.dll
+C:\Users\Igor\Desktop\Desktop\iProjects\iProjects\obj\Debug\iProjects.pdb
+D:\Desktop\iProjects\iProjects\bin\iProjects.dll.config
+D:\Desktop\iProjects\iProjects\bin\iProjects.dll
+D:\Desktop\iProjects\iProjects\bin\iProjects.pdb
+D:\Desktop\iProjects\iProjects\bin\Antlr3.Runtime.dll
+D:\Desktop\iProjects\iProjects\bin\EntityFramework.dll
+D:\Desktop\iProjects\iProjects\bin\EntityFramework.SqlServer.dll
+D:\Desktop\iProjects\iProjects\bin\FluentNHibernate.dll
+D:\Desktop\iProjects\iProjects\bin\Iesi.Collections.dll
+D:\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Desktop\iProjects\iProjects\bin\Microsoft.Owin.dll
+D:\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.dll
+D:\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Google.dll
+D:\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Desktop\iProjects\iProjects\bin\Microsoft.Web.Infrastructure.dll
+D:\Desktop\iProjects\iProjects\bin\Newtonsoft.Json.dll
+D:\Desktop\iProjects\iProjects\bin\NHibernate.dll
+D:\Desktop\iProjects\iProjects\bin\Owin.dll
+D:\Desktop\iProjects\iProjects\bin\PagedList.dll
+D:\Desktop\iProjects\iProjects\bin\PagedList.Mvc.dll
+D:\Desktop\iProjects\iProjects\bin\System.Net.Http.Formatting.dll
+D:\Desktop\iProjects\iProjects\bin\System.Web.Helpers.dll
+D:\Desktop\iProjects\iProjects\bin\System.Web.Http.dll
+D:\Desktop\iProjects\iProjects\bin\System.Web.Http.WebHost.dll
+D:\Desktop\iProjects\iProjects\bin\System.Web.Mvc.dll
+D:\Desktop\iProjects\iProjects\bin\System.Web.Optimization.dll
+D:\Desktop\iProjects\iProjects\bin\System.Web.Razor.dll
+D:\Desktop\iProjects\iProjects\bin\System.Web.WebPages.Deployment.dll
+D:\Desktop\iProjects\iProjects\bin\System.Web.WebPages.dll
+D:\Desktop\iProjects\iProjects\bin\System.Web.WebPages.Razor.dll
+D:\Desktop\iProjects\iProjects\bin\WebGrease.dll
+D:\Desktop\iProjects\iProjects\bin\FluentNHibernate.pdb
+D:\Desktop\iProjects\iProjects\bin\FluentNHibernate.xml
+D:\Desktop\iProjects\iProjects\bin\Iesi.Collections.xml
+D:\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Desktop\iProjects\iProjects\bin\NHibernate.xml
+D:\Desktop\iProjects\iProjects\bin\PagedList.xml
+D:\Desktop\iProjects\iProjects\bin\PagedList.Mvc.xml
+D:\Desktop\iProjects\iProjects\bin\System.Net.Http.Formatting.xml
+D:\Desktop\iProjects\iProjects\bin\System.Web.Http.xml
+D:\Desktop\iProjects\iProjects\bin\System.Web.Http.WebHost.xml
+D:\Desktop\iProjects\iProjects\bin\System.Web.Helpers.xml
+D:\Desktop\iProjects\iProjects\bin\System.Web.Mvc.xml
+D:\Desktop\iProjects\iProjects\bin\System.Web.Optimization.xml
+D:\Desktop\iProjects\iProjects\bin\System.Web.Razor.xml
+D:\Desktop\iProjects\iProjects\bin\System.Web.WebPages.xml
+D:\Desktop\iProjects\iProjects\bin\System.Web.WebPages.Deployment.xml
+D:\Desktop\iProjects\iProjects\bin\System.Web.WebPages.Razor.xml
+D:\Desktop\iProjects\iProjects\bin\Antlr3.Runtime.pdb
+D:\Desktop\iProjects\iProjects\bin\Newtonsoft.Json.xml
+D:\Desktop\iProjects\iProjects\bin\EntityFramework.xml
+D:\Desktop\iProjects\iProjects\bin\EntityFramework.SqlServer.xml
+D:\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Desktop\iProjects\iProjects\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Desktop\iProjects\iProjects\bin\Microsoft.Owin.xml
+D:\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.xml
+D:\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Google.xml
+D:\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Desktop\iProjects\iProjects\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Desktop\iProjects\iProjects\obj\Debug\iProjects.csprojResolveAssemblyReference.cache
+D:\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.sad.resources
+D:\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.Story.resources
+D:\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.RelSt.resources
+D:\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.Prior.resources
+D:\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.ProjPr.resources
+D:\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.SprintActive.resources
+D:\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.SprintFinish.resources
+D:\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.pp.resources
+D:\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.Files.resources
+D:\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.sd.resources
+D:\Desktop\iProjects\iProjects\obj\Debug\iProjects.Migrations.dsa.resources
+D:\Desktop\iProjects\iProjects\obj\Debug\iProjects.csproj.GenerateResource.Cache
+D:\Desktop\iProjects\iProjects\obj\Debug\iProjects.dll
+D:\Desktop\iProjects\iProjects\obj\Debug\iProjects.pdb

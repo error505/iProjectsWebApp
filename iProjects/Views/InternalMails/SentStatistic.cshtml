@@ -1,0 +1,21 @@
+﻿@{ Layout = null; }
+
+@using System.Collections
+
+@using iProjects.Models
+@using Microsoft.Ajax.Utilities
+@using Microsoft.AspNet.Identity
+@using NHibernate.Properties
+@model IEnumerable<iProjects.Models.InternalMail>
+@{
+    ApplicationDbContext db = new ApplicationDbContext();
+    ApplicationUser user = db.Users.Find(User.Identity.GetUserId());
+    var elements = Model;
+    var elementsForCurrentUser = elements.Where(x => x.From == user.UserName).ToList();
+
+
+
+    @elementsForCurrentUser.Count
+}
+
+

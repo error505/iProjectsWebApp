@@ -1,0 +1,94 @@
+﻿@model IEnumerable<iProjects.Models.SupportTicket>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@if (Request.IsAuthenticated && User.IsInRole("Admin"))
+{
+    <p type="button" class="btn btn-success">
+        @Html.ActionLink("Create New Ticket", "Create")
+    </p>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.From)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProjectName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Message)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.From)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProjectName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Message)
+        </td>
+        <td>
+            @{
+                if (item.Status == false)
+                {
+                    <div class="label label-warning">
+                        <div class="hidden">
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </div>
+                        Opened
+                    </div>
+                }
+                else
+                {
+                    <div class="label label-success">
+                        <div class="hidden">
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </div>
+                        Finished
+                    </div>
+                }
+            }
+        </td>
+        <td>
+            @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+            {
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-clean dropdown-toggle" data-toggle="dropdown">
+                        Action <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu7">
+                        <li>@Html.ActionLink("Edit", "Edit", new { id = item.Id })</li>
+                        <li>@Html.ActionLink("Details", "Details", new { id = item.Id })</li>
+                        <li>@Html.ActionLink("Delete", "Delete", new { id = item.Id })</li>
+</ul>
+                </div>
+            }
+        </td>
+
+    </tr>
+}
+
+</table>

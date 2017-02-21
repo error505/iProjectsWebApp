@@ -1,0 +1,68 @@
+﻿<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="fa icon-user"></span> Admin</a>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("Roles", "Index", "RolesAdmin")</li>
+        <li>@Html.ActionLink("Users", "Index", "UsersAdmin")</li>
+        <li>@Html.ActionLink("Groups", "Index", "GroupsAdmin")</li>
+    </ul>
+</li>
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="fa icon-compass"></span> Agile</a>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("Projects Category", "Index", "ProjectCategories")</li>
+        <li>@Html.ActionLink("Epic", "Index", "Epics")</li>
+        <li>@Html.ActionLink("Backlog", "Backlog", "Home")</li>
+        <li>@Html.ActionLink("Projects", "Index", "Projects")</li>
+        <li>@Html.ActionLink("Sprint", "Index", "Sprints")</li>
+        <li>@Html.ActionLink("Stories", "Index", "Stories")</li>
+        <li>@Html.ActionLink("Release", "Index", "Releases")</li>
+        <li>@Html.ActionLink("Status", "Index", "StatusOfStoriesTasks")</li>
+        <li>@Html.ActionLink("Tasks", "Index", "TasksToDoes")</li>
+        <li>@Html.ActionLink("Upload File", "Index", "ProjectFilesDbs")</li>
+        <li>@Html.ActionLink("Download Files", "Download", "ProjectFilesDbs")</li>
+        <li>@Html.ActionLink("HeadLines", "Index", "Headlines")</li>
+    </ul>
+</li>
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="fa icon-users"></span> Clients</a>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("Add Client", "Create", "Clients")</li>
+        <li>@Html.ActionLink("Clients List", "Index", "Clients")</li>
+    </ul>
+</li>
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="fa fa-support"></span> Support</a>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("Tickets", "Index", "SupportTickets")</li>
+        <li>@Html.ActionLink("Create Ticket", "Create", "SupportTickets")</li>
+    </ul>
+</li>
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="fa fa-windows"></span> Crash</a>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("Crash Reports", "Index", "CrashReports")</li>
+        <li>@Html.ActionLink("Create Crash Report", "Create", "CrashReports")</li>
+    </ul>
+</li>
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="fa fa-bug"></span> Bugs</a>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("Bug Reports", "Index", "BugReports")</li>
+        <li>@Html.ActionLink("Create Bug Report", "Create", "BugReports")</li>
+        <li>@Html.ActionLink("Create Bug type", "Create", "BugTypes")</li>
+    </ul>
+</li>
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="fa fa-dollar"></span> Payments</a>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("Create Payment", "Create", "Invoices")</li>
+        <li>@Html.ActionLink("Payment List", "Index", "Invoices")</li>
+    </ul>
+</li>
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="fa fa-book"></span> Dictionary</a>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("New Dictionary Word", "Create", "Dictionaries")</li>
+        <li>@Html.ActionLink("Dictionary", "Index", "Dictionaries")</li>
+    </ul>
+</li>

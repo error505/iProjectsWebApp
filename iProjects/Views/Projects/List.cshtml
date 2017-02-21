@@ -1,0 +1,59 @@
+﻿@using iProjects.Models
+@model IEnumerable<iProjects.Models.Project>
+@{ Layout = null; }
+
+@Html.ValidationSummary(false)
+
+@if (Request.IsAuthenticated && User.IsInRole("Admin"))
+{
+    <p type="button" class="btn btn-primary btn-block fa fa-plus">
+        @Html.ActionLink("Create New", "Create", new { onclick = "noty({text: 'Create New', type: 'Success'});" })
+    </p>
+}
+        @foreach (var item in Model)
+        {
+            if (item.Finished == false)
+        {
+            <div class="content tasks">
+                <div class="task-item priority-mid">
+                    <div class="task-item-content">
+                        <div class="task-item-head">@Html.DisplayFor(modelItem => item.ProjectTitle)</div>
+                        <div class="task-item-subhead">
+                            <h6>@Html.DisplayFor(modelItem => item.Url)</h6>
+                            <br />
+                            @Html.Raw(item.Description)
+                        </div>
+                        <div class="task-item-date">
+                            <i class="fa fa-calendar"></i> @Html.DisplayFor(modelItem => item.User.Email) &nbsp;  @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                            {
+                                <div class="btn-group">
+                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                                        <span class="fa fa-cogs"></span>
+                                    </button>
+                                    <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu5">
+                                        <li>@Html.ActionLink("Edit", "Edit", new { id = item.ProjectId }) </li>
+                                        <li>@Html.ActionLink("Details", "Details", new { id = item.ProjectId })</li>
+                                        <li>@Html.ActionLink("Delete", "Delete", new { id = item.ProjectId }, new { onclick = "noty({text: 'Are you sure you want to delete!', type: 'error'});" })</li>
+                                    </ul>                                    
+                                </div>
+                            }
+                            @if (Request.IsAuthenticated && User.IsInRole("ProjectUser"))
+                            {
+                                <div class="btn-group">
+                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                                        Action <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        @Html.ActionLink("Details", "Details", new { id = item.ProjectId })
+                                    </ul>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        }        
+        }
+
+
+

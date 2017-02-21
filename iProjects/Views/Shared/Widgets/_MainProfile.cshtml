@@ -1,0 +1,89 @@
+﻿<div class="portlets">
+    <div class="widget block block-drop-shadow">
+        <div class="widget-header bg-default bg-light-rtl">
+            <div class="additional-btn">
+                <a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a>
+                <a class="hidden" id="dropdownMenu9" data-toggle="dropdown">
+                    <i class="fa fa-cogs"></i>
+                </a>
+                <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu9">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+                <a href="#" class="widget-popout hidden tt" title="Pop Out/In"><i class="icon-publish"></i></a>
+                <a href="#" class="widget-maximize hidden"><i class="icon-resize-full-1"></i></a>
+                <a href="#" class="widget-toggle"><i class="icon-down-open-2"></i></a>
+                <a href="#" class="widget-close"><i class="icon-cancel-3"></i></a>
+            </div>
+            <i class="fa icon-user fa-2x"></i> Profile
+        </div>
+        <div class="widget-content">
+            <div class="user bg-default bg-light-rtl">
+                <div class="info">
+                    <a href="#" class="informer informer-three">
+                        <span>@{
+                            Html.RenderAction("Notifications", "InternalMails");
+                        } / @{
+                            Html.RenderAction("Statistic", "InternalMails");
+                        }</span>
+                        Messages
+                    </a>
+                    <a href="#" class="informer informer-four">
+                        <span>
+                            @{
+                            Html.RenderAction("Notifications", "TasksToDoes");
+                        } / @{
+                            Html.RenderAction("Statistics", "TasksToDoes");
+                        }
+                    </span>
+                    Agile
+                    </a>
+                    <img src="~/Content/img/example/user/dmitry_b.jpg" class="img-circle img-thumbnail"/>
+                </div>
+            </div>
+            <div class="content list-group list-group-icons">
+                <a href="/InternalMails/" class="list-group-item"><span class="fa fa-envelope"></span>Email<i class="fa fa-angle-right pull-right"></i></a>
+                <a href="#" class="list-group-item" id="showmodalbox"><span class="fa fa-calculator"></span>Calculator<i class="fa fa-angle-right pull-right"></i></a>
+                <a href="#" class="list-group-item" id="showmodalboxstatistic"><span class="fa fa-bar-chart"></span>Statistic<i class="fa fa-angle-right pull-right"></i></a>
+                <a href="javascript:document.getElementById('logoutForm').submit()" class="list-group-item"><span class="fa fa-power-off"></span>Logout<i class="fa fa-angle-right pull-right"></i></a>
+            </div>
+        </div>
+        <!--The Modal box defined using class modal-->
+        <div id="modalboxtime" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1>Current Time </h1>
+                    </div>
+                    <div class="modal-body">
+                        @Html.Partial("Widgets/_clock")
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button class="btn btn-primary">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modalboxstatistics" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1>Curent Statics</h1>
+                    </div>
+                    <div class="modal-body">
+                        @Html.Partial("Widgets/_Statistic")
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button class="btn btn-primary">Ok</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end here-->

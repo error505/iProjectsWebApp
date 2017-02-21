@@ -1,0 +1,101 @@
+﻿@model PagedList.IPagedList<iProjects.Models.Dictionary>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Dictionary German</h2>
+
+<p type="button" class="fa fa-plus btn btn-primary btn-clean">
+    @Html.ActionLink("Create New Translation", "Create")
+</p>
+<p type="button" class="fa fa-file-excel-o btn btn-primary btn-clean">
+    @Html.ActionLink("Export To Excel", "Export")
+</p>
+<form class="navbar-form navbar-right" role="search">
+    <div class="form-group">
+        @using (Html.BeginForm("Index", "Dictionaries", FormMethod.Get))
+        {
+            <p>
+                Search by Foreing Word / Translation: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string, new {@class = "form-control", placeholder = "Search...", type = "text"})
+                <input type="submit" value="Search" class="btn btn-primary btn-clean"/>
+            </p>
+        }
+    </div>
+</form>
+<div class="table-responsive">
+    <form class='form-horizontal' role='form'>
+        <table class="table table-bordered table-striped table-hover sortable_simple bg-img-num6">
+            <thead class="head bg-default bg-light-ltr np">
+                <tr>
+                    <th>
+                        @Html.ActionLink("Foreing Word", "Index", new { sortOrder = ViewBag.WordSort, currentFilter = ViewBag.CurrentFilter })
+                    </th>
+                    <th>
+                        Pronunciation
+                    </th>
+                    <th>
+                        @Html.ActionLink("Translation", "Index", new { sortOrder = ViewBag.TranslateSort, currentFilter = ViewBag.CurrentFilter })
+                    </th>
+                    <th>
+                        Example
+                    </th>
+                    <th>
+                        @Html.ActionLink("Gender/Kind", "Index", new { sortOrder = ViewBag.GenderKindSort, currentFilter = ViewBag.CurrentFilter })
+                    </th>
+                    <th>
+                        Additional
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            @foreach (var item in Model)
+            {
+                <tbody>
+                    <tr>
+                        <td class="success">
+                            @Html.DisplayFor(modelItem => item.ForeignWord)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Pronunciation)
+                        </td>
+                        <td class="danger">
+                            @Html.DisplayFor(modelItem => item.Translate)
+                        </td>
+                        <td class='content'>
+                            @Html.Raw(item.Example)
+                        </td>
+                        <td class="danger">
+                            @Html.DisplayTextFor(modelItem => item.GenderKind)
+                        </td>
+                        <td>
+                            @Html.Raw(item.Additional)
+                        </td>
+                        <td>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+                                    Action <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            }
+
+        </table>
+    </form>
+</div>
+    <br />
+<div class="btn-group pull-right">
+
+    Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+    @Html.PagedListPager(Model, page => Url.Action("Index",
+        new {page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter}))
+
+
+</div>

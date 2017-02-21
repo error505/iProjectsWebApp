@@ -1,0 +1,82 @@
+﻿<div class="portlets">
+    <div class="widget  block block-drop-shadow darkblue-2 ">
+        <div class="panel-heading">
+            <div class="widget-header transparent">
+                <div class="additional-btn">
+                    <a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a>
+                    <a class="hidden" id="dropdownMenu5" data-toggle="dropdown">
+                        <i class="fa fa-cogs"></i>
+                    </a>
+                    <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu5">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                    <a href="#" class="widget-popout hidden tt" title="Pop Out/In"><i class="icon-publish"></i></a>
+                    <a href="#" class="widget-maximize hidden"><i class="icon-resize-full-1"></i></a>
+                    <a href="#" class="widget-toggle"><i class="icon-down-open-2"></i></a>
+                    <a href="#" class="widget-close"><i class="icon-cancel-3"></i></a>
+                </div>
+                <i class="fa fa-bar-chart fa-3x"></i> Statistics
+            </div>
+            <div class="widget-content">
+                <div class="panel-body">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-users fa-fw"></i> Clients:
+                            <span class="pull-right text-muted small">
+                                <em>@{ Html.RenderAction("Statistics", "Clients"); }</em>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-info-circle fa-fw"></i>Projects Categories:
+                            <span class="pull-right text-muted small">
+                                <em>@{ Html.RenderAction("Statistics", "ProjectCategories"); }</em>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-cubes fa-fw"></i> Projects:
+                            <span class="pull-right text-muted small">
+                                <em>@{ Html.RenderAction("Statistics", "Projects"); }</em>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-file-code-o fa-fw"></i> Files:
+                            <span class="pull-right text-muted small">
+                                <em>@{ Html.RenderAction("Statistics", "ProjectFilesDbs"); }</em>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-tasks fa-fw"></i> Tasks ToDo:
+                            <span class="pull-right text-muted small">
+                                <em>@{ Html.RenderAction("Statistics", "TasksToDoes"); }</em>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-paper-plane fa-fw"></i> Suport Tickets:
+                            <span class="pull-right text-muted small">
+                                <em>@{ Html.RenderAction("Statistics", "SupportTickets"); }</em>
+                            </span>
+                        </a>
+                        <a href="#" class="list-group-item">
+                            <i class="fa fa-dollar fa-fw"></i> Invoices:
+                            <span class="pull-right text-muted small">
+                                <em>@{ Html.RenderAction("Statistics", "Invoices"); }</em>
+                            </span>
+                        </a>
+                    </div>
+                    <!-- /.list-group -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            @*<div class="help-tip">
+                    <p>Count All from database nad display statistic!</p>
+                </div>*@
+
+        </div>
+        <!-- /.panel-heading -->
+
+    </div>
+</div>

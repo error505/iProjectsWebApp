@@ -1,0 +1,149 @@
+﻿@using iProjects.Models
+@using Microsoft.AspNet.Identity
+@model iProjects.Models.InternalMail
+
+@using (Html.BeginForm()) 
+{
+   
+    @Html.AntiForgeryToken()
+    <div class="">
+        <!-- ============================================================== -->
+        <!-- Start Content here -->
+        <!-- ============================================================== -->
+        <div class="content">
+            <!-- Page Heading Start -->
+            <div class="page-heading">
+                <h1><i class='fa fa-envelope'></i> E-mail</h1>
+            </div>
+            <!-- Page Heading End-->
+            <!-- Your awesome content goes here -->
+            <div class="box-info box-messages animated fadeInDown">
+                <div class="row">
+                    <div class="col-md-3">
+                        <!-- Sidebar Message -->
+
+                        <div class="btn-group new-message-btns stacked">
+                            <a href="/InternalMails/" class="btn btn-primary btn-lg btn-block text-left"><i class="icon-left-open-1"></i> Back to Inbox</a>
+                        </div>
+                        <div class="list-group menu-message">
+                            <a href="/InternalMails/" class="list-group-item active">
+                                <i class="icon-inbox"></i> Inbox <span class="badge pull-right">
+                                    @{
+    Html.RenderAction("Notifications", "InternalMails");
+                                }
+                            </span>
+                        </a>
+
+                            <a href="#fakelink" class="list-group-item"><i class="icon-pencil"></i> Draft <span class="badge bg-green-1 pull-right">1</span></a>
+                            <a href="#fakelink" class="list-group-item"><i class="icon-star"></i> Important <span class="badge bg-red-1 pull-right">2</span></a>
+                            <a href="#fakelink" class="list-group-item"><i class="icon-export"></i> Sent</a>
+                            <a href="#fakelink" class="list-group-item"><i class="icon-cup"></i> Trash <span class="badge bg-lightblue-1 pull-right">1</span></a>
+                        </div>
+
+                        <div class="list-group menu-folders">
+                            <a href="#fakelink" class="list-group-item"><i class="fa fa-circle text-red-1"></i> Work</a>
+                            <a href="#fakelink" class="list-group-item"><i class="fa fa-circle text-green-1"></i> Social</a>
+                            <a href="#fakelink" class="list-group-item"><i class="fa fa-circle text-blue-1"></i> Friends</a>
+                            <a href="#fakelink" class="list-group-item"><i class="fa fa-circle text-orange-3"></i> Private</a>
+                            <a href="#fakelink" class="list-group-item"><i class="fa fa-circle text-lightblue-2"></i> Family</a>
+                        </div>
+                    </div><!-- ENd div .col-md-2 -->
+
+                    @{
+    ApplicationDbContext db = new ApplicationDbContext();
+    ApplicationUser user = db.Users.Find(User.Identity.GetUserId());
+    var from = user.UserName;
+}
+                    <div class="col-md-9">
+                        <div class="widget">
+                            <div class="widget-content padding">
+                                <form role="form" class="form-horizontal">
+
+                                        <div class="form-group">
+                                            @Html.LabelFor(model => model.UserId, "UserId", htmlAttributes: new { @class = "control-label col-md-2" })
+                                            <div class="col-md-10">
+                                                @Html.DropDownList("UserId", null, htmlAttributes: new { @class = "form-control" })
+                                                @Html.ValidationMessageFor(model => model.UserId, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                    <br/>
+                                    <div class="form-group hidden">
+                                        @Html.LabelFor(model => model.From, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.From, new { htmlAttributes = new { @class = "form-control", @Value = from } })
+                                            @Html.ValidationMessageFor(model => model.From, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Subject, htmlAttributes: new {@class = "control-label col-md-2"})
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.Subject, new {htmlAttributes = new {@class = "form-control"}})
+                                            @Html.ValidationMessageFor(model => model.Subject, "", new {@class = "text-danger"})
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <br />
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Message, htmlAttributes: new {@class = "control-label col-md-2"})
+                                        <div class="col-md-10">
+                                            @Html.TextAreaFor(model => model.Message, new {htmlAttributes = new {@class = "form-control"}, @class = "ckeditor"})
+                                            @Html.ValidationMessageFor(model => model.Message, "", new {@class = "text-danger"})
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-8">
+                                            <button type="submit" class="btn btn-success"><i class="icon-paper-plane-1"></i> Send</button>
+                                            <button type="submit" class="btn btn-danger">Save</button>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <p class="quick-post message">
+                                                <a href="javascript" title="Attach Picture" data-toggle="tooltip"><i class="fa fa-picture-o"></i></a>
+                                                <a href="javascript" title="Attach Video" data-toggle="tooltip"><i class="fa fa-video-camera"></i></a>
+                                                <a href="javascript" title="Attach Files" data-toggle="tooltip"><i class="fa fa-paperclip"></i></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of your awesome content -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End content here -->
+        <!-- ============================================================== -->
+
+    </div>
+
+}
+
+<div>
+    
+</div>
+@*<div class="col-sm-1 col-xs-3 text-right">
+        <div class="btn-group">
+            <a class="btn btn-default btn-xs" href="javascript:;" onclick="$('.cc-hidden').toggleClass('hidden')">Cc</a>
+            <a class="btn btn-default btn-xs" href="javascript:;" onclick="$('.bcc-hidden').toggleClass('hidden')">Bcc</a>
+        </div>
+         <div class="form-group cc-hidden hidden">
+                                            <label class="control-label col-sm-1">Cc:</label>
+                                            <div class="col-sm-11">
+                                                <input type="text" class="form-control input-invis">
+                                            </div>
+                                        </div>
+                                        <div class="form-group bcc-hidden hidden">
+                                            <label class="control-label col-sm-1">Bcc:</label>
+                                            <div class="col-sm-11">
+                                                <input type="text" class="form-control input-invis">
+                                            </div>
+                                        </div>
+     <div class="form-group">
+            @Html.LabelFor(model => model.AttachmentFile, htmlAttributes: new {@class = "control-label col-md-2"})
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.AttachmentFile, new {htmlAttributes = new {@class = "form-control"}})
+                @Html.ValidationMessageFor(model => model.AttachmentFile, "", new {@class = "text-danger"})
+            </div>
+        </div>
+    </div>*@

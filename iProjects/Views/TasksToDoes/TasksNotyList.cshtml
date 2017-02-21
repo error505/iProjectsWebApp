@@ -1,0 +1,38 @@
+﻿@using iProjects.Models
+@using Microsoft.AspNet.Identity
+@model IEnumerable<iProjects.Models.TasksToDo>
+@{ Layout = null; }
+<ul class="dropdown-menu dropdown-message">
+    <li class="dropdown-header notif-header"><i class="icon-bell-2"></i> New Tasks<a class="pull-right" href="#"></a></li>       
+            @{
+                ApplicationDbContext db = new ApplicationDbContext();
+                ApplicationUser user = db.Users.Find(User.Identity.GetUserId());
+                foreach (var item in Model)
+                {
+                    if (item.IsDone == false)
+                    {
+                        if (item.UserId != user.Id)
+                        {
+                            <div class="hidden">
+                            </div>
+                        }
+                        else
+                        {
+                            <li class="unread">
+                                <a href="#">
+                                    <p>
+                                        <strong>@Html.DisplayFor(modelItem => item.Title)</strong> @Html.DisplayFor(modelItem => item.User.Name) <strong>&#34;@Html.DisplayFor(modelItem => item.Project.ProjectTitle)&#34;</strong>
+                                        <br /><i>@Html.DisplayFor(modelItem => item.Description)</i>
+                                    </p>
+                                </a>
+                            </li>
+                        }
+                    }
+                }
+                <li class="dropdown-footer">
+                    <div class="">
+                        <a href="/TasksToDoes/" class="btn btn-sm btn-block btn-primary"><i class="fa fa-share"></i> See all tasks</a>
+                    </div>
+                </li>
+}                           
+</ul>

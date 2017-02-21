@@ -1,0 +1,46 @@
+﻿@{ Layout = null; }
+
+@using System.Collections
+
+@using iProjects.Models
+@using Microsoft.Ajax.Utilities
+@using Microsoft.AspNet.Identity
+@using NHibernate.Properties
+@model IEnumerable<iProjects.Models.InternalMail>
+@{
+    ApplicationDbContext db = new ApplicationDbContext();
+    ApplicationUser user = db.Users.Find(User.Identity.GetUserId());
+    var elements = Model;
+    var elementsForCurrentUser = elements.Where(x => x.UserId == user.Id);
+
+    var notDoneElements = elementsForCurrentUser.Where(x => x.IsRead == false).ToList();
+
+    @notDoneElements.Count
+    @*foreach (var item in Model)
+        {
+            if (item.IsDone == false)
+            {
+                if (item.UserId != user.Id)
+                {
+                    <div class="hidden">
+                    </div>
+                }
+                else
+                {
+                    if (@item.Id != 0)
+                    {
+                        var todoe = db.TasksToDoes;
+                        var statsModel  = (todoe.Where(i => i.Id == item.Id)).Count();
+                        @statsModel;
+                    }
+                    else
+                    {
+                        <div>0</div>
+                    }
+                }
+
+            }
+        }*@
+}
+
+

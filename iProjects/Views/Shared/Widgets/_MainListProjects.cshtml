@@ -1,0 +1,75 @@
+﻿ 
+<div class="portlets">
+    <div class="widget block block-drop-shadow ">
+        <div class="head bg-default bg-light-ltr">
+            <div class="widget-header transparent">
+                <h2><i class="fa fa-check-square-o"> Projects</i></h2>
+                <div class="additional-btn">
+                    <a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a>
+                    <a class="hidden" id="dropdownMenu5" data-toggle="dropdown">
+                        <i class="fa fa-cogs"></i>
+                    </a>
+                    <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu5">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                    <a href="#" class="widget-popout hidden tt" title="Pop Out/In"><i class="icon-publish"></i></a>
+                    <a href="#" class="widget-maximize hidden"><i class="icon-resize-full-1"></i></a>
+                    <a href="#" class="widget-toggle"><i class="icon-down-open-2"></i></a>
+                    <a href="#" class="widget-close"><i class="icon-cancel-3"></i></a>
+                </div>
+            </div>
+            <div class="widget-content darkblue-2">
+                <div class="head-panel nm">
+                    <div class="left_abs_100" style="margin-top: 20px;">
+                        <div class="knob">
+                            <input id="lines2" class="animate-number" type="text" data-fgcolor="#FFFFFF" data-min="0" data-max="200" data-width="100" data-height="100" value="@{ Html.RenderAction("Statistics", "Projects"); }" data-duration="2000" data-readonly="true" />
+                        </div>
+                    </div>
+                    <div class="chart" id="dash_chart_1" style="height: 150px;"></div>
+                </div>
+                <div class="head-panel nm">
+                    <div class="hp-info pull-left">
+                        <div class="hp-icon">
+                            <span class="fa fa-cubes"></span>
+                        </div>
+                        <span class="hp-main">@{ Html.RenderAction("Statistics", "Projects"); }</span>
+                        <span class="hp-sm">Projects</span>
+                    </div>
+                    <div class="hp-info pull-left">
+                        <div class="hp-icon">
+                            <span class="fa fa-briefcase"></span>
+                        </div>
+                        <span class="hp-main">@{ Html.RenderAction("Statistics", "ProjectCategories"); }</span>
+                        <span class="hp-sm">Categories</span>
+                    </div>
+                    <div class="hp-info pull-right">
+                        <div class="hp-icon">
+                            <span class="fa fa-cloud-download"></span>
+                        </div>
+                        <span class="hp-main">@{ Html.RenderAction("Statistics", "ProjectFilesDbs"); }</span>
+                        <span class="hp-sm">Files</span>
+                    </div>
+                </div>
+                @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                {
+                    { Html.RenderAction("List", "Projects"); }
+                }
+                @if (Request.IsAuthenticated && User.IsInRole("ProjectUser"))
+                {
+                    { Html.RenderAction("List", "Projects"); }
+                }
+            </div>
+        </div>
+        @*<div class="chart">
+            <div class="percentage easyPieChart" data-percent="@{ Html.RenderAction("Statistics", "Projects"); }"><span class="cpercent"></span></div>
+        </div>*@
+    </div>
+</div>
+<script src="@Url.Content("~/Scripts/AnimateNumbers/jquery.animateNumber.min.js")"></script>
+<script>
+    $("#lines2").animateNumber({ number: $("#lines2").attr("value") });
+</script>

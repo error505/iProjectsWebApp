@@ -1,0 +1,72 @@
+﻿@model iProjects.Models.Dictionary
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Dictionary</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ForeignWord)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ForeignWord)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pronunciation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pronunciation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Translate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Translate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Example)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Example)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GenderKind)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GenderKind)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Additional)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Additional)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

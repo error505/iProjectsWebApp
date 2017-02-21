@@ -1,0 +1,55 @@
+﻿<div class="col-lg-3 col-md-6 portlets">
+    <div class="widget panel panel-success">
+        <div class="panel-heading">
+            <div class="widget-header transparent">
+                <i class="icon-users-1"></i>
+                <div class="additional-btn">
+                    <a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a>
+                    <a class="hidden" id="dropdownMenu3" data-toggle="dropdown">
+                        <i class="fa fa-cogs"></i>
+                    </a>
+                    <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu3">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                    <a href="#" class="widget-popout hidden tt" title="Pop Out/In"><i class="icon-publish"></i></a>
+                    <a href="#" class="widget-maximize hidden"><i class="icon-resize-full-1"></i></a>
+                    <a href="#" class="widget-toggle"><i class="icon-down-open-2"></i></a>
+                    <a href="#" class="widget-close"><i class="icon-cancel-3"></i></a>
+                </div>
+            </div>
+            @*<div class="help-tip">
+                    <p>View how many clients do you have in database. Add new clients.</p>
+                </div>*@
+            <div class="widget-content">
+                <div class="row">
+                    <div class="col-xs-9 text-left">
+                        <div class="big"></div>
+                        <h1>
+                            <b><span id="lines" class="animate-number" data-value="@{ Html.RenderAction("Statistics", "Clients"); }" data-duration="3000"></span></b>
+                        </h1>
+                        <h3>Clients</h3>
+                    </div>
+                    <div class="col-xs-3">
+                        <i class="fa fa-users fa-5x wtt-mark"></i>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <a href="#">
+            <div class="panel-footer">
+                <span class="pull-left">@Html.ActionLink("View Clients", "Index", "Clients")</span>
+                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+                <div class="clearfix"></div>
+            </div>
+        </a>
+    </div>
+</div>
+<script src="@Url.Content("~/Scripts/AnimateNumbers/jquery.animateNumber.min.js")"></script>
+<script>
+    $("#lines").animateNumber({ number: $("#lines").attr("data-value") });
+</script>
+

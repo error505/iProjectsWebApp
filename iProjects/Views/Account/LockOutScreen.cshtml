@@ -1,0 +1,67 @@
+﻿@using System.Web.UI.WebControls
+@using iProjects.Models
+@model LoginViewModel
+    <body>
+    <div class="container">
+        <div class="login-block">
+            <div class="block block-transparent">
+                <div class="head">
+                    <a href="javascript:document.getElementById('logoutForm').submit() /Account/Login">
+                        <div class="user">
+                            <div class="info user-change">
+                                <img src="~/Content/img/private6.png" class="img-circle img-thumbnail" />
+                                <div class="user-change-button">
+                                    <span class="fa fa-power-off"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <h7>Enter your password to access the application.</h7>
+                        <hr />
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            <div class="hidden">
+                                @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+                                <div class="form-row">
+                                    <div class="col-md-12">
+                                        <div class="input-group">
+                                            <div class="input-group-addon">
+                                                <span class="fa fa-user"></span>
+                                            </div>
+                                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Email" })
+                                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <span class="fa fa-unlock"></span>
+                                        </div>
+                                        @Html.PasswordFor(m => m.Password, new {@class = "form-control", placeholder = "Password"})
+                                        @Html.ValidationMessageFor(m => m.Password, "", new {@class = "text-danger"})
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-2 col-sm-9">
+                                    <input type="submit" value="Unlock Screen" class="btn btn-block btn-clean" />
+                                </div>
+                            </div>
+                        </div>
+                    }
+            </div>
+        </div>
+    </div>
+</body>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }
+

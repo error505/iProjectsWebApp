@@ -1,0 +1,100 @@
+﻿@model iProjects.Models.TasksToDo
+
+@{
+    ViewBag.Title = "Ticket Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TasksToDo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+    </dl>
+</div>
+<div class="col-md-4">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="panel-title">
+                <h4>
+                    <i class="fa fa-info-circle"></i> Task Summary
+                </h4>
+            </div>
+        </div>
+
+        <div class="panel-body" style="padding:0px;">
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <td style="width:130px;"><i class="fa fa-dot-circle-o"></i> @Html.DisplayNameFor(model => model.Title)</td>
+                        <td> : </td>
+                        <td>@Html.DisplayFor(model => model.Title)</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-dot-circle-o"></i> @Html.DisplayNameFor(model => model.User.Name)</td>
+                        <td> : </td>
+                        <td>@Html.DisplayFor(model => model.User.Name)</td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa fa-dot-circle-o"></i> @Html.DisplayNameFor(model => model.Project.ProjectTitle)</td>
+                        <td> : </td>
+                        <td>@Html.DisplayFor(model => model.Project.ProjectTitle)</td>
+                    </tr>
+                <tr>
+                    <td><i class="fa fa-dot-circle-o"></i> @Html.DisplayNameFor(model => model.Description)</td>
+                    <td> : </td>
+                    <td>@Html.DisplayFor(model => model.Description)</td>
+                </tr>
+
+                <tr>
+                    <td><i class="fa fa-dot-circle-o"></i> @Html.DisplayNameFor(model => model.PrioritiesId)</td>
+                    <td> : </td>
+                    <td>@Html.DisplayFor(model => model.Priority.Name)</td>
+                </tr>
+
+                    <tr>
+                        <td><i class="fa fa-dot-circle-o"></i> @Html.DisplayNameFor(model => model.StatusId)</td>
+                        <td> : </td>
+                        <td>@Html.DisplayFor(model => model.StatusOfStoriesTasks.Status)</td>
+                    </tr>
+                <tr>
+                        <td><i class="fa fa-dot-circle-o"></i> @Html.DisplayNameFor(model => model.IsDone)</td>
+                        <td> : </td>
+                        <td>
+                            @{
+                                if (Model.IsDone == false)
+                                {
+                                    <div class="label label-warning">
+                                        <div class="hidden">
+                                            @Html.DisplayFor(model => model.IsDone)
+                                        </div>
+                                        Opened
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="label label-success">
+                                        <div class="hidden">
+                                            @Html.DisplayFor(model => model.IsDone)
+                                        </div>
+                                        Done
+                                    </div>
+                                }
+                            }
+                        </td>
+                    </tr>
+                   </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!--Assign support staff-->
+    <button type="button" class="btn btn-primary btn-icon icon-left" >
+        @Html.ActionLink("Back to List", "Index")                <i class="entypo-user-add"></i>
+    </button>
+
+    <!--Update ticket status-->
+    <button type="button" class="btn btn-info btn-icon icon-edit">
+       @Html.ActionLink("Edit", "Edit", new { id = Model.Id })<i class="entypo-user-add"></i>
+    </button>
+</div>

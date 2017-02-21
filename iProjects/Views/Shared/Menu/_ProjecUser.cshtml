@@ -1,0 +1,38 @@
+﻿
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="fa fa-pencil"></span> Projects</a>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("Projects", "Index", "Projects")</li>
+        <li>@Html.ActionLink("Upload File", "Index", "ProjectFilesDbs")</li>
+        <li>@Html.ActionLink("Download Files", "Download", "ProjectFilesDbs")</li>
+    </ul>
+</li>
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="fa fa-tasks"></span> Tasks</a>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("Tasks", "Index", "TasksToDoes")</li>
+    </ul>
+</li>
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="fa fa-chain-broken"></span> Crash</a>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("Crash Reports", "Index", "CrashReports")</li>
+        <li>@Html.ActionLink("Create Crash Report", "Create", "CrashReports")</li>
+    </ul>
+</li>
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="fa fa-bug"></span> Bugs</a>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("Bug Reports", "Index", "BugReports")</li>
+        <li>@Html.ActionLink("Create Bug Report", "Create", "BugReports")</li>
+        <li>@Html.ActionLink("Create Bug type", "Create", "BugTypes")</li>
+    </ul>
+</li>
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="fa fa-book"></span> Dictionary</a>
+    <ul class="dropdown-menu">
+        <li>@Html.ActionLink("New Dictionary Word", "Create", "Dictionaries")</li>
+        <li>@Html.ActionLink("Dictionary", "Index", "Dictionaries")</li>
+    </ul>
+</li>
+

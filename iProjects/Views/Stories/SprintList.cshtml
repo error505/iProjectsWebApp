@@ -1,0 +1,63 @@
+﻿@using iProjects.Models
+@using Microsoft.AspNet.Identity
+@model IEnumerable<iProjects.Models.Story>
+@{ Layout = null; }
+@if (Request.IsAuthenticated && User.IsInRole("Create"))
+{
+    <p type="button" class="btn btn-primary btn-block fa fa-plus">
+        @Html.ActionLink("Create New Task", "Create")
+    </p>
+}
+@{
+    ApplicationDbContext db = new ApplicationDbContext();
+    ApplicationUser user = db.Users.Find(User.Identity.GetUserId());
+    Project proj = new Project();
+    //Compare id of URL with id of item.
+    var sprintId = Url.RequestContext.RouteData.Values["id"].ToString();
+
+    foreach (var item in Model)
+    {
+        if (item.IsDone == false && item.Backlog == false && item.SprintsId.ToString() == sprintId)
+        {
+            if (item.UserId != user.Id)
+            {
+                <div class="hidden">
+                </div>
+            }
+            else
+            {
+                <div class="content tasks">
+                    <div class="task-item priority-low">
+                        <div class="task-item-content">
+                            <div class="task-item-head">Fix Version: @Html.DisplayFor(modelItem => item.Releases.Version)</div>
+                            <div class="task-item-subhead">
+                                <h6>@Html.DisplayFor(modelItem => item.Name)</h6>
+                                <br />
+                                @Html.Raw(item.Description)
+                            </div>
+                            <div class="task-item-date">
+                                <i class="fa icon-user-3"></i> @Html.DisplayFor(modelItem => item.User.Name) <i class="fa icon-progress-0"></i> @Html.DisplayFor(modelItem => item.Priority.Name) <i class="fa icon-spread"></i> @Html.DisplayFor(modelItem => item.Releases.Name) <i class="fa icon-stackoverflow"></i> @Html.DisplayFor(modelItem => item.StatusOfStoriesTasks.Status) <i class="fa icon-stackoverflow"></i> @Html.DisplayFor(modelItem => item.Epic.Name) &nbsp; @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+                                {
+                                    <div class="btn fa fa-edit">
+                                        @Html.ActionLink("Edit", "Edit", new { id = item.StoryId })
+                                    </div>
+                                }
+
+                                @if (Request.IsAuthenticated && User.IsInRole("ProjectUser"))
+                                {
+                                    <div class="btn fa fa-edit">
+                                        @Html.ActionLink("Edit", "Edit", new { id = item.StoryId })
+                                    </div>
+                                }
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    }
+
+
+
+}

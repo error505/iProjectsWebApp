@@ -1,0 +1,12 @@
+﻿@model IEnumerable<iProjects.Models.HeadLineTwo>
+@{ Layout = null; }
+
+    @foreach (var item in Model)
+    {
+
+                @Html.Raw(item.Message)
+
+    }
+
+
+

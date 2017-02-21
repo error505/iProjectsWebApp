@@ -1,0 +1,51 @@
+﻿<div class="portlets">
+    <div class="widget block block-drop-shadow">
+        <div class="head bg-default bg-light-rtl">
+            <div class="widget-header transparent">
+                <h2><i class="fa fa-check-square-o"> Tasks To Do</i></h2>
+                <div class="additional-btn">
+                    <a href="#" class="hidden reload"><i class="icon-ccw-1"></i></a>
+                    <a class="hidden" id="dropdownMenu11" data-toggle="dropdown">
+                        <i class="fa fa-cogs"></i>
+                    </a>
+                    <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu11">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                    <a href="#" class="widget-popout hidden tt" title="Pop Out/In"><i class="icon-publish"></i></a>
+                    <a href="#" class="widget-maximize hidden"><i class="icon-resize-full-1"></i></a>
+                    <a href="#" class="widget-toggle"><i class="icon-down-open-2"></i></a>
+                    <a href="#" class="widget-close"><i class="icon-cancel-3"></i></a>
+                </div>
+            </div>
+            <h2></h2>
+            <div class="head-panel nm">
+                <a href="#" class="hp-info pull-left">
+                    <div class="hp-icon">
+                        <span class="fa fa-check-square-o"></span>
+                    </div>
+                    <span class="hp-main">@{ Html.RenderAction("Statistics", "TasksToDoes"); }</span>
+                    <span class="hp-sm">ToDo</span>
+                </a>
+            </div>
+        </div>
+        <div class="widget-content">
+            @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+            {
+                {
+                    Html.RenderAction("ProjList", "TasksToDoes");
+                }
+            }
+            @if (Request.IsAuthenticated && User.IsInRole("ProjectUser"))
+            {
+                {
+                    Html.RenderAction("ProjList", "TasksToDoes");
+                }
+            }
+        </div>
+    </div>
+</div>
+

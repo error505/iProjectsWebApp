@@ -1,0 +1,66 @@
+﻿@model iProjects.Models.Dictionary
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Dictionary</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ForeignWord)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ForeignWord)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pronunciation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pronunciation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Translate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Translate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Example)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Example)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GenderKind)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GenderKind)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Additional)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Additional)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,25 @@
+﻿@model iProjects.Models.ProjectFile
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div>
+    @using (Html.BeginForm("Index", "ProjectFilesDbs", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <div>           
+            @Html.LabelFor(x => x.File)
+            @Html.TextBoxFor(x => x.File, new { type = "file", multiple = "true", })
+            @Html.ValidationMessageFor(x => x.File)
+        </div>
+        <button type="submit" class="btn btn-info" id="submit-button">
+            Upload File
+        </button>
+    }
+
+</div>
+
+<p>
+    @Html.ActionLink("Download Files", "Download")
+</p>
+

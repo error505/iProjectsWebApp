@@ -1,0 +1,87 @@
+﻿@model IEnumerable<iProjects.Models.TasksToDo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@if (Request.IsAuthenticated && User.IsInRole("Admin"))
+{
+    <p type="button" class="btn btn-success">
+        @Html.ActionLink("Create New Task", "Create")
+    </p>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Project.ProjectTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.User.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsDone)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Project.ProjectTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @{
+                if (item.IsDone == false)
+                {
+                    <div class="label label-warning">
+                        <div class="hidden">
+                            @Html.DisplayFor(modelItem => item.IsDone)
+                        </div>
+                        Opened
+                    </div>
+                }
+                else
+                {
+                    <div class="label label-success">
+                        <div class="hidden">
+                            @Html.DisplayFor(modelItem => item.IsDone)
+                        </div>
+                        Finished
+                    </div>
+                }
+            }
+        </td>
+        <td>
+            @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+            {
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-clean dropdown-toggle" data-toggle="dropdown">
+                        Action <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="dropdownMenu8">
+                        <li>@Html.ActionLink("Edit", "Edit", new { id = item.Id })</li>
+                        <li>@Html.ActionLink("Details", "Details", new { id = item.Id })</li>
+                        <li>@Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { onclick = "noty({text: 'Dellete', type: 'error'});" })</li>
+                    </ul>
+                </div>
+            }
+        </td>
+    </tr>
+}
+
+</table>

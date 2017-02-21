@@ -1,0 +1,80 @@
+﻿@model iProjects.Models.Invoice
+
+<div class="invoice">
+    <div class="row">
+        <div class="col-sm-6 invoice-left">
+            Alt Rödelheim 3
+            <br>
+            Frankfurt am Main, 64890
+            <br>
+            Phone: +49152851919
+            <br>
+            Igor Iric
+            <br>
+            info@@igoriric.com
+        </div> <div class="col-sm-6 invoice-right"> <h3>INVOICE NO. #@Html.DisplayFor(model => model.InvoiceNumber)</h3> <span>Order Date: @Html.DisplayFor(model => model.PaymentDate)</span> </div>
+    </div> <hr class="margin"> <div class="row">
+        <div class="col-sm-3 invoice-left">
+            <h4>Billed To:</h4>
+            @Html.DisplayFor(model => model.Client)
+            <br>
+            @Html.DisplayFor(model => model.Email)
+            <br>
+            @Html.DisplayFor(model => model.Company)
+        </div> <div class="col-sm-3 invoice-left">
+            <h4>&nbsp;</h4>
+            @Html.DisplayFor(model => model.Country)
+            @Html.DisplayFor(model => model.Street)
+            <br>
+            @Html.DisplayFor(model => model.Town)
+            <br>
+            @Html.DisplayFor(model => model.Phone)
+        </div> <div class="col-md-6 invoice-right">
+            <h4>Payment Details:</h4> <strong>V.A.T Reg #:</strong> @Html.DisplayFor(model => model.AccountNr)
+            <br> <strong>Account Name:</strong> @Html.DisplayFor(model => model.Company)
+            <br> <strong>SWIFT code:</strong> @Html.DisplayFor(model => model.Swift)
+        </div>
+    </div> <div class="margin"></div> <table class="table table-bordered"> <thead> <tr> <th class="text-center">#</th> <th width="60%">Product</th> <th>@Html.DisplayNameFor(model => model.Description)</th> <th>Price</th> </tr> </thead> <tbody> <tr> <td class="text-center">1</td> <td>@Html.DisplayFor(model => model.Project.ProjectTitle)</td> <td>@Html.DisplayFor(model => model.Description)</td> <td class="text-right">@Html.DisplayFor(model => model.Amount)</td> </tr></tbody> </table> <div class="margin"></div> <div class="row">
+        <div class="col-sm-6">
+        </div> <div class="col-sm-6">
+            <div class="invoice-right">
+                <ul class="list-unstyled">
+                    <li>
+                        @Html.DisplayNameFor(model => model.PaymentMethode) :
+                        @Html.DisplayFor(model => model.PaymentMethode)
+                    </li>
+                    <li>
+                        @Html.DisplayNameFor(model => model.Tax):
+                        <strong>@Html.DisplayFor(model => model.Tax)</strong>
+                    </li>
+                    <li>
+                        Discount:
+                        @Html.DisplayFor(model => model.Discount)
+                    </li>
+                    <li>
+                        Grand Total:
+                        <strong>@Html.DisplayFor(model => model.Total)</strong>
+                    </li>
+                    <li>
+                        @Html.DisplayNameFor(model => model.IsPayed)
+                        <br>
+                        @Html.DisplayFor(model => model.IsPayed)
+                    </li>
+                    <p class="text-right payment-methods"><i class="fa fa-cc-visa"></i> <i class="fa fa-cc-mastercard"></i> <i class="fa fa-cc-discover"></i> <i class="fa fa-cc-amex"></i> <i class="fa fa-cc-paypal"></i> <i class="fa fa-cc-stripe"></i></p>
+                </ul> <br> <a href="javascript:window.print();" class="btn btn-primary btn-icon icon-left hidden-print">
+                    Print Invoice
+                    <i class="entypo-doc-text"></i>
+                </a>
+                &nbsp;
+                <a href="mailto:info@igoriric.com?subject=Invoice" class="btn btn-success btn-icon icon-left hidden-print">
+                    Send Invoice
+                    <i class="entypo-mail"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PaymentId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

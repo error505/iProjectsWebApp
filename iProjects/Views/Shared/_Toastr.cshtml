@@ -1,0 +1,7 @@
+﻿@using iProjects.Toast
+<script src="~/Scripts/jquery-2.1.3.min.js"></script>
+@if (TempData.ContainsKey("Toastr"))
+{
+    var toastr = TempData["Toastr"] as Toastr;
+    @ToastrBuilder.ShowToastMessages(toastr);
+}
